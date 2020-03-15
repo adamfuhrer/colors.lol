@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'styles/base';
+
+p {
+  color: $oil;
+  font-size: 1.6rem;
+
+  + p {
+    margin-top: 20px;
+  }
+}
+
+a {
+  color: $orange;
+  text-decoration: none;
+  transition: color 350ms $ease 0s;
+
+  &:hover, &:focus {
+    color: darken($orange, 6%);
+    outline: none;
+  }
+}
