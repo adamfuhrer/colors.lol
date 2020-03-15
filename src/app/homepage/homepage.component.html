@@ -1,0 +1,12 @@
+<div class="page-wrapper">
+  <a class="site-name" routerLink="/">
+    <h1>colors.lol</h1>
+  </a>
+  <h2>Overly descriptive color palettes.</h2>
+  <div class="content-wrapper">
+    <app-color-palette *ngFor="let palette of palettes; let i = index"
+                       [colors]="palette"
+                       [isPaletteDirectionVertical]="i % 2 === 0">
+    </app-color-palette>
+  </div>
+</div>

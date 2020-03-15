@@ -1,0 +1,23 @@
+<div class="palette" [style.flex-direction]="isPaletteDirectionVertical ? 'column' : 'row'" >
+  <div class="color"
+       [style.background]="colors[0].hex"
+       [style.flex-grow]="6">
+  </div>
+  <div class="color"
+       [style.background]="colors[1].hex"
+       [style.flex-grow]="2">
+  </div>
+  <div class="color"
+       [style.background]="colors[2].hex"
+       [style.flex-grow]="8">
+  </div>
+</div>
+<div class="description">
+  <div *ngFor="let color of colors" class="color-wrapper">
+    <div class="left">
+      <div class="swatch" [style.background]="color.hex"></div>
+      <h3 class="name">{{color.adjective}} {{color.description}}</h3>
+    </div>
+    <h4 class="hex">{{color.hex | uppercase}}</h4>
+  </div>
+</div>

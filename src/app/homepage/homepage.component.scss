@@ -1,0 +1,51 @@
+@import '../../styles/vars';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: $content-width;
+    padding-bottom: 200px;
+
+    .site-name {
+      h1 {
+        transition: $transition-normal;
+      }
+
+      &:hover {
+        h1 {
+          color: $orange;
+        }
+      }
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 120px;
+
+      app-color-palette + app-color-palette {
+        margin-top: 80px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    .page-wrapper {
+      .content-wrapper {
+        app-color-palette + app-color-palette {
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}

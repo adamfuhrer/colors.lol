@@ -1,0 +1,66 @@
+@import '../../styles/vars';
+
+:host {
+  display: block;
+  width: 100%;
+
+  .palette {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: $box-shadow-strong;
+    height: 280px;
+    width: 100%;
+    overflow: hidden;
+
+    .color {
+      display: flex;
+    }
+  }
+
+  .description {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .color-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 40px;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        .swatch {
+          width: 20px;
+          height: 20px;
+          border-radius: 5px;
+          margin-right: 10px;
+          box-shadow: $box-shadow-weak;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    .palette {
+      height: 160px;
+      border-radius: 0;
+    }
+
+    .description {
+      .color-wrapper {
+        height: 30px;
+
+        h3.name {
+          font-size: 1.6rem;
+        }
+
+        h4.hex {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
