@@ -7,6 +7,7 @@ import {AboutComponent} from './about/about.component';
 const routes: Routes = [
   {path: '', component: HomepageComponent},
   {path: 'about', component: AboutComponent},
+  {path: ':id', component: HomepageComponent},
   {path: '**', redirectTo: '', component: HomepageComponent}
 ];
 

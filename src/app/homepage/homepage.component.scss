@@ -4,47 +4,59 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 
-  .page-wrapper {
+  .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     max-width: $content-width;
-    padding-bottom: 200px;
+    padding-bottom: 80px;
+    width: 100%;
 
-    .site-name {
-      h1 {
-        transition: $transition-normal;
-      }
+    .palette-wrapper {
+      width: 100%;
 
-      &:hover {
-        h1 {
-          color: $orange;
-        }
+      app-color-palette {
+        margin-top: 80px;
       }
     }
 
-    .content-wrapper {
+    button.view-all {
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      width: 100%;
-      margin-top: 120px;
+      justify-content: center;
+      color: $pink;
+      margin-top: 50px;
+      font-size: 1.8rem;
+      transition: $transition-normal;
 
-      app-color-palette + app-color-palette {
-        margin-top: 80px;
+      &:hover, &:focus {
+        color: darken($pink, 10%);
+
+        svg {
+          transform: translateX(-4px);
+        }
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: #BBBBBB;
+        margin-right: 8px;
+        transition: $transition-normal;
+        transform: translateX(0);
       }
     }
   }
 
   @media screen and (max-width: $breakpoint-medium) {
-    .page-wrapper {
-      .content-wrapper {
-        app-color-palette + app-color-palette {
-          margin-top: 60px;
-        }
+    .content-wrapper {
+      app-color-palette {
+        margin-top: 60px;
       }
     }
   }
