@@ -1,9 +1,8 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
-interface Color {
+export interface Color {
   hex: string;
   description: string;
-  adjective: string;
 }
 
 @Component({
@@ -11,12 +10,16 @@ interface Color {
   templateUrl: './color-palette.component.html',
   styleUrls: ['./color-palette.component.scss']
 })
-export class ColorPaletteComponent implements OnInit {
+export class ColorPaletteComponent {
   @Input() colors: Color[];
   @Input() isPaletteDirectionVertical = true;
+  @Input() isShowingLinkButton = true;
 
-
-  ngOnInit() {
+  randomNumFromInterval(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
+  getRouterLink() {
+    return '/' + this.colors[0].description.split(' ')[0];
+  }
 }

@@ -2,14 +2,42 @@
 
 :host {
   display: block;
+  position: relative;
   width: 100%;
+
+  .link {
+    position: absolute;
+    left: -46px;
+    top: 6px;
+    width: 40px;
+    height: 40px;
+
+    a {
+      width: 40px;
+      height: 40px;
+    }
+
+    svg {
+      fill: #BBBBBB;
+      width: 24px;
+      height: 24px;
+      transition: $transition-normal;
+    }
+
+    &:hover, &:focus {
+      transition: $transition-normal;
+
+      svg {
+        fill: $oil;
+      }
+    }
+  }
 
   .palette {
     display: flex;
     border-radius: 10px;
     box-shadow: $box-shadow-strong;
     height: 280px;
-    width: 100%;
     overflow: hidden;
 
     .color {
@@ -37,7 +65,8 @@
           height: 20px;
           border-radius: 5px;
           margin-right: 10px;
-          box-shadow: $box-shadow-weak;
+          border: 1px solid rgba(0,0,0,.2);
+          box-shadow: inset -1px -1px 0 rgba(0,0,0,.2), inset 1px 1px 0 0 rgba(255,255,255,.3), 0 2px 4px rgba(0,0,0,.2);
         }
       }
     }
