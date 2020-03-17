@@ -6,6 +6,9 @@
                        [isPaletteDirectionVertical]="i % 2 === 0">
     </app-color-palette>
   </div>
+  <h5 *ngIf="paletteParam && !isPaletteFound()" class="empty">
+    Palette not found.
+  </h5>
   <button *ngIf="paletteParam && paletteParam !== 'about'"
           class="view-all"
           routerLink="/">

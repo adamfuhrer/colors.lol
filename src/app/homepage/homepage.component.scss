@@ -33,10 +33,10 @@
       margin-top: 50px;
       font-size: 1.8rem;
       transition: $transition-normal;
+      background: #FFEAF0;
+      border-radius: 5px;
 
       &:hover, &:focus {
-        color: darken($pink, 10%);
-
         svg {
           transform: translateX(-4px);
         }
@@ -45,11 +45,15 @@
       svg {
         width: 16px;
         height: 16px;
-        fill: #BBBBBB;
+        fill: $pink;
         margin-right: 8px;
         transition: $transition-normal;
         transform: translateX(0);
       }
+    }
+
+    .empty {
+      margin-top: 40px;
     }
   }
 

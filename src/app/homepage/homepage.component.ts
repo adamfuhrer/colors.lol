@@ -532,7 +532,6 @@ export class HomepageComponent implements OnInit {
         description: 'otherwise bright purple'
       }
     ],
-
     [
       {
         hex: '#ffd1df',
@@ -761,7 +760,15 @@ export class HomepageComponent implements OnInit {
     });
   }
 
-  getPaletteParamId(palette: Color[]) {
+  getPaletteParamId(palette: Color[]): string {
     return palette[0].description.split(' ')[0];
+  }
+
+  isPaletteFound(): boolean {
+    const paletteIds = [];
+    this.palettes.forEach(palette => {
+      paletteIds.push(palette[0].description.split(' ')[0]);
+    });
+    return paletteIds.includes(this.paletteParam);
   }
 }
