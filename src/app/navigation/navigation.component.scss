@@ -11,8 +11,8 @@
     justify-content: flex-end;
     min-height: 50px;
     margin-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
     max-width: 1200px;
 
@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 30px;
 
     .site-name {
       h1 {
@@ -67,6 +67,12 @@
         border-radius: 3px;
         background: linear-gradient(to right, rgb(255, 68, 68), rgb(255, 152, 60), rgb(255, 233, 56), rgb(93, 255, 58), rgb(59, 254, 255), rgb(58, 187, 255), rgb(168, 55, 255), rgb(255, 62, 250));
       }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-medium) {
+    header {
+      margin-top: 30px;
     }
   }
 }

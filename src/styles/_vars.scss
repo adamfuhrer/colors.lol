@@ -4,10 +4,10 @@ $amaranth: 'Amaranth', sans-serif;
 $nitti: 'Nitti Normal', sans-serif;
 
 // Dimensions
-$content-width: 900px;
+$content-width: 800px;
 
 // Breakpoints
-$breakpoint-medium: $content-width;
+$breakpoint-medium: $content-width + 100px;
 $breakpoint-small: 560px;
 
 // Colours

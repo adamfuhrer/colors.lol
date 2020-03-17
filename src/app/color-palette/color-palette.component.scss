@@ -7,7 +7,7 @@
 
   .link {
     position: absolute;
-    left: -46px;
+    right: -46px;
     top: 6px;
     width: 40px;
     height: 40px;
@@ -54,14 +54,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 40px;
+      min-height: 40px;
 
       .left {
         display: flex;
         align-items: center;
+        margin-right: 10px;
 
         .swatch {
           width: 20px;
+          min-width: 20px;
           height: 20px;
           border-radius: 5px;
           margin-right: 10px;
@@ -73,6 +75,30 @@
   }
 
   @media screen and (max-width: $breakpoint-medium) {
+    .link {
+      left: unset;
+      right: 4px;
+      width: 30px;
+      height: 30px;
+
+      a {
+        width: 30px;
+        height: 30px;
+      }
+
+      svg {
+        fill: rgba(255, 255, 255, 0.8);
+        width: 16px;
+        height: 16px;
+      }
+
+      &:hover, &:focus {
+        svg {
+          fill: rgba(255, 255, 255, 0.96);
+        }
+      }
+    }
+
     .palette {
       height: 160px;
       border-radius: 0;
@@ -80,7 +106,7 @@
 
     .description {
       .color-wrapper {
-        height: 30px;
+        min-height: 30px;
 
         h3.name {
           font-size: 1.6rem;

@@ -54,9 +54,19 @@
   }
 
   @media screen and (max-width: $breakpoint-medium) {
+    margin-top: 20px;
+
     .content-wrapper {
-      app-color-palette {
-        margin-top: 60px;
+      max-width: 100%;
+
+      .palette-wrapper {
+        app-color-palette {
+          margin-top: 50px;
+        }
+      }
+
+      button.view-all {
+        margin-top: 30px;
       }
     }
   }
