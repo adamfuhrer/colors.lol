@@ -1,13 +1,72 @@
 @import '../../styles/vars';
 
 :host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     min-height: 50px;
-    margin-top: 40px;
+    margin-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    width: 100%;
+    max-width: 1200px;
+
+    button.about {
+      color: $oil;
+      font-size: 1.6rem;
+      font-weight: $regular;
+      transition: $transition-normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 46px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+
+      &:hover {
+        border: 1px solid $grey;
+      }
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+
+    .site-name {
+      h1 {
+        transition: $transition-normal;
+      }
+
+      &:hover {
+        h1 {
+          color: $pink;
+        }
+      }
+    }
+
+    h2.description {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: -14px;
+        left: 0;
+        right: 0;
+        height: 4px;
+        border-radius: 3px;
+        background: linear-gradient(to right, rgb(255, 68, 68), rgb(255, 152, 60), rgb(255, 233, 56), rgb(93, 255, 58), rgb(59, 254, 255), rgb(58, 187, 255), rgb(168, 55, 255), rgb(255, 62, 250));
+      }
+    }
   }
 }
