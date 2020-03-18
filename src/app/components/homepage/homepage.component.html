@@ -1,6 +1,6 @@
-<div class="content-wrapper">
+<div class="content-wrapper" fadeIn>
   <div class="palette-wrapper" *ngFor="let palette of palettes; let i = index">
-    <app-color-palette *ngIf="paletteParam == null || paletteParam === getPaletteParamId(palette)"
+    <app-color-palette *ngIf="paletteParam === null || paletteParam === getPaletteParamId(palette)"
                        [isShowingLinkButton]="paletteParam !== getPaletteParamId(palette)"
                        [colors]="palette"
                        [isPaletteDirectionVertical]="i % 2 === 0">

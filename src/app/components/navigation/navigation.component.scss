@@ -1,4 +1,4 @@
-@import '../../styles/vars';
+@import 'src/styles/vars';
 
 :host {
   display: flex;
@@ -9,12 +9,44 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    min-height: 50px;
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
     max-width: 1200px;
+
+    .filters {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      height: 40px;
+
+      .label {
+        margin-right: 10px;
+        color: $grey;
+      }
+
+      .color {
+        width: 18px;
+        min-width: 18px;
+        height: 30px;
+        transition: height 350ms $ease 0s;
+
+        &:hover {
+          height: 44px;
+        }
+
+        &:first-of-type {
+          border-bottom-left-radius: 5px;
+          border-top-left-radius: 5px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
 
     button.about {
       color: $oil;

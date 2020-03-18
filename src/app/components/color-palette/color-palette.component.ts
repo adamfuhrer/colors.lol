@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 export interface Color {
   hex: string;
@@ -10,16 +10,17 @@ export interface Color {
   templateUrl: './color-palette.component.html',
   styleUrls: ['./color-palette.component.scss']
 })
-export class ColorPaletteComponent {
+export class ColorPaletteComponent implements OnInit {
   @Input() colors: Color[];
   @Input() isPaletteDirectionVertical = true;
   @Input() isShowingLinkButton = true;
+  paletteIdLength: number;
 
-  randomNumFromInterval(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
+  ngOnInit() {
+    this.paletteIdLength = this.getPaletteId().length;
   }
 
-  getRouterLink() {
-    return '/' + this.colors[0].description.split(' ')[0];
+  getPaletteId(): string {
+    return this.colors[0].description.split(' ')[0];
   }
 }

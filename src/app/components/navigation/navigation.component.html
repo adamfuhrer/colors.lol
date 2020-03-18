@@ -1,0 +1,23 @@
+<nav>
+  <div *ngIf="isShowingFilters" class="filters">
+    <span class="label">
+      FILTER:
+    </span>
+    <button *ngFor="let color of colorFilters"
+            class="color"
+            [style.background]="color"
+            (click)="onFilterClick(color)">
+    </button>
+  </div>
+  <button class="about" routerLink="/about">
+    ABOUT
+  </button>
+</nav>
+<header>
+  <a class="site-name"
+     routerLink="/"
+     (click)="onFilterClick(null)">
+    <h1>colors.lol</h1>
+  </a>
+  <h2 class="description">Overly descriptive color palettes.</h2>
+</header>

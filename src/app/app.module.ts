@@ -1,12 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { AboutComponent } from './about/about.component';
-import { ColorPaletteComponent } from './color-palette/color-palette.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { AboutComponent } from './components/about/about.component';
+import { ColorPaletteComponent } from './components/color-palette/color-palette.component';
+import { ColorFilterService } from './services/color-filter.service';
+import { FadeInDirective } from './directives/fade-in.directive';
 
 @NgModule({
   declarations: [
@@ -14,13 +17,15 @@ import { ColorPaletteComponent } from './color-palette/color-palette.component';
     NavigationComponent,
     HomepageComponent,
     AboutComponent,
-    ColorPaletteComponent
+    ColorPaletteComponent,
+    FadeInDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ColorFilterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
