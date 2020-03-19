@@ -37,6 +37,16 @@ h5 {
   letter-spacing: 1px;
 }
 
+h6 {
+  font-size: 3rem;
+  color: $oil;
+  font-weight: $semi-bold;
+
+  + p {
+    margin-top: 20px;
+  }
+}
+
 
 @media screen and (max-width: $breakpoint-medium) {
   h1 {

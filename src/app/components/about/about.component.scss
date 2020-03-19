@@ -4,14 +4,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 60px;
 
   .content-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: $content-width;
     padding-bottom: 80px;
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
