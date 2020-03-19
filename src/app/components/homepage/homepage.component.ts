@@ -28,47 +28,18 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#ed0dd9',
-        description: 'tendinous fuchsia',
+        hex: '#9dbcd4',
+        description: 'ectophytic light grey blue',
       },
       {
-        hex: '#c1c6fc',
-        description: 'isotopic light periwinkle'
+        hex: '#fffd01',
+        description: 'store bright yellow'
       },
       {
-        hex: '#be03fd',
-        description: 'inspired bright purple'
+        hex: '#6d5acf',
+        description: 'undiagnosed light indigo'
       }
     ],
-    [
-      {
-        hex: '#475f94',
-        description: 'whacking dusky blue',
-      },
-      {
-        hex: '#fddc5c',
-        description: 'loverless light gold'
-      },
-      {
-        hex: '#fa4224',
-        description: 'unremarked orangey red'
-      }
-    ],
-    [
-      {
-        hex: '#00022e',
-        description: 'unsatable dark navy blue',
-      },
-      {
-        hex: '#ff073a',
-        description: 'all-time neon red'
-      },
-      {
-        hex: '#02066f',
-        description: 'facial dark royal blue'
-      }
-    ],
-
     [
       {
         hex: '#ffbacd',
@@ -85,6 +56,35 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
+        hex: '#00022e',
+        description: 'unsatable dark navy blue',
+      },
+      {
+        hex: '#ff073a',
+        description: 'all-time neon red'
+      },
+      {
+        hex: '#02066f',
+        description: 'facial dark royal blue'
+      }
+    ],
+    [
+      {
+        hex: '#475f94',
+        description: 'whacking dusky blue',
+      },
+      {
+        hex: '#fddc5c',
+        description: 'loverless light gold'
+      },
+      {
+        hex: '#fa4224',
+        description: 'unremarked orangey red'
+      }
+    ],
+
+    [
+      {
         hex: '#343837',
         description: 'grassiest charcoal',
       },
@@ -99,30 +99,16 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#9dbcd4',
-        description: 'ectophytic light grey blue',
+        hex: '#ed0dd9',
+        description: 'tendinous fuchsia',
       },
       {
-        hex: '#fffd01',
-        description: 'store bright yellow'
+        hex: '#c1c6fc',
+        description: 'isotopic light periwinkle'
       },
       {
-        hex: '#6d5acf',
-        description: 'undiagnosed light indigo'
-      }
-    ],
-    [
-      {
-        hex: '#fe019a',
-        description: 'immediate neon pink',
-      },
-      {
-        hex: '#5a06ef',
-        description: 'spicate blue/purple'
-      },
-      {
-        hex: '#fcfc81',
-        description: 'supplicatory yellowish tan'
+        hex: '#be03fd',
+        description: 'inspired bright purple'
       }
     ],
     [
@@ -141,20 +127,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#107ab0',
-        description: 'farraginous nice blue',
-      },
-      {
-        hex: '#fdc1c5',
-        description: 'scrubby pale rose'
-      },
-      {
-        hex: '#fd5956',
-        description: 'jerking grapefruit'
-      }
-    ],
-    [
-      {
         hex: '#ffab0f',
         description: 'fou yellowish orange',
       },
@@ -165,6 +137,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#fe46a5',
         description: 'tractive barbie pink'
+      }
+    ],
+    [
+      {
+        hex: '#107ab0',
+        description: 'farraginous nice blue',
+      },
+      {
+        hex: '#fdc1c5',
+        description: 'scrubby pale rose'
+      },
+      {
+        hex: '#fd5956',
+        description: 'jerking grapefruit'
       }
     ],
     [
@@ -195,7 +181,48 @@ export class HomepageComponent implements OnInit {
         description: 'in-service merlot'
       }
     ],
-
+    [
+      {
+        hex: '#fe019a',
+        description: 'immediate neon pink',
+      },
+      {
+        hex: '#5a06ef',
+        description: 'spicate blue/purple'
+      },
+      {
+        hex: '#fcfc81',
+        description: 'supplicatory yellowish tan'
+      }
+    ],
+    [
+      {
+        hex: '#d8dcd6',
+        description: 'ungentlemanly light grey',
+      },
+      {
+        hex: '#3b719f',
+        description: 'deadly muted blue'
+      },
+      {
+        hex: '#8f8ce7',
+        description: 'entopic perrywinkle'
+      }
+    ],
+    [
+      {
+        hex: '#4984b8',
+        description: 'unamusing cool blue',
+      },
+      {
+        hex: '#dfc5fe',
+        description: 'big-name light lavender'
+      },
+      {
+        hex: '#c83cb9',
+        description: 'surface-active purpley pink'
+      }
+    ],
     [
       {
         hex: '#000133',
@@ -212,20 +239,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#fea993',
-        description: 'cabbalistical light salmon',
-      },
-      {
-        hex: '#fe02a2',
-        description: 'premeditative shocking pink'
-      },
-      {
-        hex: '#fdee73',
-        description: 'encircled sandy yellow'
-      }
-    ],
-    [
-      {
         hex: '#82a67d',
         description: 'uninviting greyish green',
       },
@@ -236,6 +249,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#825f87',
         description: 'muttering dusty purple'
+      }
+    ],
+    [
+      {
+        hex: '#fea993',
+        description: 'cabbalistical light salmon',
+      },
+      {
+        hex: '#fe02a2',
+        description: 'premeditative shocking pink'
+      },
+      {
+        hex: '#fdee73',
+        description: 'encircled sandy yellow'
       }
     ],
     [
@@ -296,20 +323,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#826d8c',
-        description: 'bivalvular grey purple',
-      },
-      {
-        hex: '#c88d94',
-        description: 'bicuspidate greyish pink'
-      },
-      {
-        hex: '#84597e',
-        description: 'ivied dull purple'
-      }
-    ],
-    [
-      {
         hex: '#fdc1c5',
         description: 'undescribable pale rose',
       },
@@ -362,20 +375,6 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#58656d',
         description: 'cross-sectional blush'
-      }
-    ],
-    [
-      {
-        hex: '#343837',
-        description: 'grassiest charcoal',
-      },
-      {
-        hex: '#03719c',
-        description: 'indiscernible ocean blue'
-      },
-      {
-        hex: '#0f9b8e',
-        description: 'unsusceptible blue/green'
       }
     ],
     [
@@ -589,6 +588,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#0e87cc',
         description: 'ornate water blue'
+      }
+    ],
+    [
+      {
+        hex: '#826d8c',
+        description: 'bivalvular grey purple',
+      },
+      {
+        hex: '#c88d94',
+        description: 'bicuspidate greyish pink'
+      },
+      {
+        hex: '#84597e',
+        description: 'ivied dull purple'
       }
     ],
     [
@@ -889,20 +902,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#d8dcd6',
-        description: 'ungentlemanly light grey',
-      },
-      {
-        hex: '#3b719f',
-        description: 'deadly muted blue'
-      },
-      {
-        hex: '#8f8ce7',
-        description: 'entopic perrywinkle'
-      }
-    ],
-    [
-      {
         hex: '#31668a',
         description: 'subtile ugly blue',
       },
@@ -927,20 +926,6 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#ffd1df',
         description: 'pre-Columbian light pink'
-      }
-    ],
-    [
-      {
-        hex: '#4984b8',
-        description: 'unamusing cool blue',
-      },
-      {
-        hex: '#dfc5fe',
-        description: 'big-name light lavender'
-      },
-      {
-        hex: '#c83cb9',
-        description: 'surface-active purpley pink'
       }
     ],
     [

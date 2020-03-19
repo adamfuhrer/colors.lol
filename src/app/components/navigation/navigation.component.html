@@ -3,15 +3,26 @@
     <span class="label">
       FILTER:
     </span>
-    <button *ngFor="let color of colorFilters"
-            class="color"
-            [style.background]="color"
-            (click)="onFilterClick(color)">
-    </button>
+    <div class="filters-wrapper">
+      <button *ngFor="let color of colorFilters"
+              class="color"
+              [style.background]="color"
+              (click)="onFilterClick(color)">
+      </button>
+      <button *ngIf="filterColor"
+              class="clear-filter"
+              [style.background]="filterColor"
+              (click)="onFilterClick(null)">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve" enable-background="new 0 0 512 512">
+          <path d="M256 0C114.51 0 0 114.5 0 256c0 141.49 114.5 256 256 256 141.49 0 256-114.5 256-256C512 114.51 397.5 0 256 0zM256 472c-119.38 0-216-96.61-216-216 0-119.38 96.61-216 216-216 119.38 0 216 96.61 216 216C472 375.39 375.39 472 256 472z"/>
+          <path d="M343.59 315.3L284.28 256l59.3-59.3c7.81-7.81 7.81-20.47 0-28.28 -7.81-7.81-20.48-7.81-28.28 0L256 227.72l-59.3-59.3c-7.81-7.81-20.47-7.81-28.28 0 -7.81 7.81-7.81 20.47 0 28.28L227.72 256l-59.3 59.3c-7.81 7.81-7.81 20.47 0 28.28 7.81 7.81 20.48 7.81 28.28 0L256 284.28l59.3 59.3c7.81 7.81 20.47 7.81 28.28 0C351.4 335.78 351.4 323.11 343.59 315.3z"/>
+        </svg>
+      </button>
+    </div>
   </div>
-  <button class="about" routerLink="/about">
+  <a class="about" routerLink="/about">
     ABOUT
-  </button>
+  </a>
 </nav>
 <header>
   <a class="site-name"
