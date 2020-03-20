@@ -10,12 +10,12 @@ p {
 }
 
 a {
-  color: $orange;
+  color: $pink;
   text-decoration: none;
   transition: color 350ms $ease 0s;
 
   &:hover, &:focus {
-    color: darken($orange, 6%);
+    color: darken($pink, 6%);
     outline: none;
   }
 }

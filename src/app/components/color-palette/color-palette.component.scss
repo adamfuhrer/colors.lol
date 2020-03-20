@@ -75,19 +75,15 @@
   @media screen and (max-width: $breakpoint-medium) {
     .link {
       left: unset;
-      right: 4px;
-      width: 30px;
-      height: 30px;
-
-      a {
-        width: 30px;
-        height: 30px;
-      }
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
 
       svg {
         fill: rgba(255, 255, 255, 0.8);
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
       }
 
       &:hover, &:focus {

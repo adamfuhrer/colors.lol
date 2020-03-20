@@ -8,7 +8,7 @@ import {ActivationStart, Router} from '@angular/router';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-  colorFilters = ['#e83a30', '#e88c30', '#e8e230', '#30c849', '#30e8bd', '#3080e8', '#8930e8', '#e830c7'];
+  colorFilters = ['#e83a30', '#e88c30', '#e8e230', '#3ab650', '#3bdeb8', '#3080e8', '#8a3cdd', '#e830c7'];
   isShowingFilters = true;
   filterColor = null;
 
