@@ -73,6 +73,26 @@
   }
 
   @media screen and (max-width: $breakpoint-medium) {
+    .palette {
+      height: 160px;
+    }
+
+    .description {
+      .color-wrapper {
+        min-height: 30px;
+
+        h3.name {
+          font-size: 1.6rem;
+        }
+
+        h4.hex {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
     .link {
       left: unset;
       top: 0;
@@ -94,22 +114,7 @@
     }
 
     .palette {
-      height: 160px;
       border-radius: 0;
-    }
-
-    .description {
-      .color-wrapper {
-        min-height: 30px;
-
-        h3.name {
-          font-size: 1.6rem;
-        }
-
-        h4.hex {
-          font-size: 1.6rem;
-        }
-      }
     }
   }
 }
