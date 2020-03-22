@@ -703,21 +703,6 @@ export class HomepageComponent implements OnInit {
         description: 'vinegary topaz'
       }
     ],
-
-    [
-      {
-        hex: '#ffd8b1',
-        description: 'unfretted light peach',
-      },
-      {
-        hex: '#c27f79',
-        description: 'fastened brownish pink'
-      },
-      {
-        hex: '#610023',
-        description: 'confiscable burgundy'
-      }
-    ],
     [
       {
         hex: '#fddc5c',
@@ -1225,21 +1210,7 @@ export class HomepageComponent implements OnInit {
         hex: '#0485d1',
         description: 'philosophical cerulean'
       }
-    ],
-    [
-      {
-        hex: '#214761',
-        description: 'fancied dark slate blue',
-      },
-      {
-        hex: '#03719c',
-        description: 'clattery ocean blue'
-      },
-      {
-        hex: '#ffffff',
-        description: 'one-armed white'
-      }
-    ],
+    ]
     // [
     //   {
     //     hex: '',

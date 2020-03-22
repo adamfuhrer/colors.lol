@@ -16,12 +16,8 @@
     padding-left: 60px;
     padding-right: 60px;
 
-    .palette-wrapper {
-      width: 100%;
-
-      app-color-palette {
-        margin-top: 80px;
-      }
+    app-color-palette {
+      margin-top: 80px;
     }
 
     .view-all {
@@ -39,6 +35,8 @@
       border-radius: 5px;
 
       &:hover, &:focus {
+        background: darken(#FFEAF0, 1%);
+
         svg {
           transform: translateX(-4px);
         }
@@ -63,10 +61,8 @@
     margin-top: 20px;
 
     .content-wrapper {
-      .palette-wrapper {
-        app-color-palette {
-          margin-top: 50px;
-        }
+      app-color-palette {
+        margin-top: 50px;
       }
 
       .view-all {
