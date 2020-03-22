@@ -10,11 +10,13 @@ import { AboutComponent } from './components/about/about.component';
 import { ColorPaletteComponent } from './components/color-palette/color-palette.component';
 import { ColorFilterService } from './services/color-filter.service';
 import { FadeInDirective } from './directives/fade-in.directive';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
+    FooterComponent,
     HomepageComponent,
     AboutComponent,
     ColorPaletteComponent,

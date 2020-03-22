@@ -974,6 +974,20 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
+        hex: '#fce166',
+        description: 'hebdomadal sand yellow',
+      },
+      {
+        hex: '#069af3',
+        description: 'distressed azure'
+      },
+      {
+        hex: '#34013f',
+        description: 'adventive dark violet'
+      }
+    ],
+    [
+      {
         hex: '#31668a',
         description: 'subtile ugly blue',
       },
@@ -1211,6 +1225,34 @@ export class HomepageComponent implements OnInit {
         description: 'philosophical cerulean'
       }
     ]
+    // [
+    //   {
+    //     hex: '',
+    //     description: '',
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   }
+    // ],
+    // [
+    //   {
+    //     hex: '',
+    //     description: '',
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   }
+    // ],
     // [
     //   {
     //     hex: '',

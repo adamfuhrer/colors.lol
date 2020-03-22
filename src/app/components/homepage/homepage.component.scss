@@ -11,10 +11,10 @@
     flex-direction: column;
     align-items: center;
     max-width: $content-width + 120px;
-    padding-bottom: 80px;
     width: 100%;
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 60px;
 
     app-color-palette {
       margin-top: 80px;
@@ -62,7 +62,7 @@
 
     .content-wrapper {
       app-color-palette {
-        margin-top: 50px;
+        margin-top: 40px;
       }
 
       .view-all {

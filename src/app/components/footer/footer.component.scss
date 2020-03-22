@@ -1,0 +1,67 @@
+@import 'src/styles/vars';
+
+:host {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    max-width: $content-width;
+    width: 100%;
+    padding: 30px 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      font-weight: $light;
+      font-size: 1.6rem;
+      color: $grey;
+
+      + li {
+        margin-left: 24px;
+      }
+
+      a {
+        color: $oil;
+        transition: $transition-normal;
+
+        &:hover, &:focus {
+           color: $pink;
+        }
+      }
+
+      a.icon {
+        width: 18px;
+        height: 18px;
+
+        &:hover, &:focus {
+          svg {
+            fill: $pink;
+          }
+        }
+
+        svg {
+          transition: $transition-normal;
+          width: 18px;
+          height: 18px;
+          fill: $grey;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-small) {
+    ul {
+      flex-direction: column;
+
+      li {
+        + li {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
