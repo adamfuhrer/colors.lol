@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
 import {Color} from '../color-palette/color-palette.component';
 import {ColorFilterService} from '../../services/color-filter.service';
@@ -10,7 +10,7 @@ import * as chroma from 'chroma-js';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
-  paletteParam: string;
+  @HostBinding('class.is-showing-single-palette') paletteParam: string;
   palettes = [
     [
       {

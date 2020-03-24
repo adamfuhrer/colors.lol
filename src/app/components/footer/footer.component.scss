@@ -51,17 +51,4 @@
       }
     }
   }
-
-  @media screen and (max-width: $breakpoint-small) {
-    ul {
-      flex-direction: column;
-
-      li {
-        + li {
-          margin-left: 0;
-          margin-top: 10px;
-        }
-      }
-    }
-  }
 }

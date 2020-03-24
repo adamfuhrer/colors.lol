@@ -7,18 +7,16 @@
   margin-top: 30px;
 
   .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: $content-width + 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px 80px;
+    justify-items: center;
+    max-width: 1120px;
     width: 100%;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 60px;
-
-    app-color-palette {
-      margin-top: 80px;
-    }
+    margin-top: 80px;
 
     .view-all {
       height: 50px;
@@ -28,11 +26,11 @@
       align-items: center;
       justify-content: center;
       color: $pink;
-      margin-top: 50px;
       font-size: 1.8rem;
       transition: $transition-normal;
       background: #FFEAF0;
       border-radius: 5px;
+      max-width: 280px;
 
       &:hover, &:focus {
         background: darken(#FFEAF0, 1%);
@@ -51,23 +49,46 @@
         transform: translateX(0);
       }
     }
+  }
 
-    .empty {
-      margin-top: 40px;
+  &.is-showing-single-palette {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+      max-width: 900px;
+
+      ::ng-deep {
+        .palette {
+          height: 240px;
+        }
+
+        .description {
+          .color-wrapper {
+            h3.name, h4.hex {
+              font-size: 2.4rem;
+            }
+          }
+        }
+      }
     }
   }
 
   @media screen and (max-width: $breakpoint-medium) {
-    margin-top: 20px;
+    &.is-showing-single-palette {
+      .content-wrapper {
+        ::ng-deep {
+          .palette {
+            height: 160px;
+          }
+        }
+      }
+    }
+  }
 
+  @media screen and (max-width: $breakpoint-medium - 140px) {
     .content-wrapper {
-      app-color-palette {
-        margin-top: 40px;
-      }
-
-      .view-all {
-        margin-top: 30px;
-      }
+      margin-top: 40px;
+      grid-template-columns: 1fr;
+      grid-gap: 40px 0;
     }
   }
 
