@@ -127,20 +127,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#a75e09',
-        description: 'rewarding raw umber',
-      },
-      {
-        hex: '#dbb40c',
-        description: 'self-respecting gold'
-      },
-      {
-        hex: '#d5174e',
-        description: 'scrappy lipstick'
-      }
-    ],
-    [
-      {
         hex: '#048243',
         description: 'foggiest jungle green',
       },
@@ -151,6 +137,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#cafffb',
         description: 'merging light light blue'
+      }
+    ],
+    [
+      {
+        hex: '#a75e09',
+        description: 'rewarding raw umber',
+      },
+      {
+        hex: '#dbb40c',
+        description: 'self-respecting gold'
+      },
+      {
+        hex: '#d5174e',
+        description: 'scrappy lipstick'
       }
     ],
     [
@@ -267,20 +267,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#000133',
-        description: 'piscine very dark blue'
-      },
-      {
-        hex: '#FC86AA',
-        description: 'pinky photic'
-      },
-      {
-        hex: '#d8dcd6',
-        description: 'work-shy light grey ',
-      }
-    ],
-    [
-      {
         hex: '#82a67d',
         description: 'uninviting greyish green',
       },
@@ -291,6 +277,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#825f87',
         description: 'muttering dusty purple'
+      }
+    ],
+    [
+      {
+        hex: '#000133',
+        description: 'piscine very dark blue'
+      },
+      {
+        hex: '#FC86AA',
+        description: 'pinky photic'
+      },
+      {
+        hex: '#d8dcd6',
+        description: 'work-shy light grey ',
       }
     ],
     [
@@ -480,20 +480,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#f19e8e',
-        description: 'muddled blush',
-      },
-      {
-        hex: '#f6688e',
-        description: 'heterodyne rosy pink'
-      },
-      {
-        hex: '#f8d561',
-        description: 'picked light mustard'
-      }
-    ],
-    [
-      {
         hex: '#214761',
         description: 'compulsive dark slate blue',
       },
@@ -621,20 +607,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#826d8c',
-        description: 'bivalvular grey purple',
-      },
-      {
-        hex: '#c88d94',
-        description: 'bicuspidate greyish pink'
-      },
-      {
-        hex: '#84597e',
-        description: 'ivied dull purple'
-      }
-    ],
-    [
-      {
         hex: '#677a04',
         description: 'unblenching olive green',
       },
@@ -645,6 +617,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#33b864',
         description: 'appropriate cool green'
+      }
+    ],
+    [
+      {
+        hex: '#826d8c',
+        description: 'bivalvular grey purple',
+      },
+      {
+        hex: '#c88d94',
+        description: 'bicuspidate greyish pink'
+      },
+      {
+        hex: '#84597e',
+        description: 'ivied dull purple'
       }
     ],
     [
@@ -889,20 +875,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#3c4142',
-        description: 'honorable charcoal grey',
-      },
-      {
-        hex: '#13bbaf',
-        description: 'fundamental topaz'
-      },
-      {
-        hex: '#edc8ff',
-        description: 'prothetic light lilac'
-      }
-    ],
-    [
-      {
         hex: '#fd8d49',
         description: 'held orangeish',
       },
@@ -913,6 +885,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#f43605',
         description: 'panting orangish red'
+      }
+    ],
+    [
+      {
+        hex: '#3c4142',
+        description: 'honorable charcoal grey',
+      },
+      {
+        hex: '#13bbaf',
+        description: 'fundamental topaz'
+      },
+      {
+        hex: '#edc8ff',
+        description: 'prothetic light lilac'
       }
     ],
     [
@@ -1055,6 +1041,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#000000',
         description: 'divorced black'
+      }
+    ],
+    [
+      {
+        hex: '#f19e8e',
+        description: 'muddled blush',
+      },
+      {
+        hex: '#f6688e',
+        description: 'heterodyne rosy pink'
+      },
+      {
+        hex: '#f8d561',
+        description: 'picked light mustard'
       }
     ],
     [

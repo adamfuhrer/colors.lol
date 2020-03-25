@@ -3,7 +3,7 @@
     <app-color-palette *ngIf="paletteParam === null || paletteParam === getPaletteParamId(palette)"
                        [isShowingLinkButton]="paletteParam !== getPaletteParamId(palette)"
                        [colors]="palette"
-                       [isPaletteDirectionVertical]="i % 2 === 0">
+                       [isPaletteDirectionVertical]="(i + 1) % 4 === 0 || i % 4 === 0">
     </app-color-palette>
   </ng-container>
   <h5 *ngIf="paletteParam && !isPaletteFound()" class="empty">

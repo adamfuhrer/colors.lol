@@ -11,7 +11,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px 80px;
     justify-items: center;
-    max-width: 1120px;
+    max-width: 1200px;
     width: 100%;
     padding-left: 60px;
     padding-right: 60px;
@@ -75,6 +75,8 @@
   @media screen and (max-width: $breakpoint-medium) {
     &.is-showing-single-palette {
       .content-wrapper {
+        max-width: 620px;
+
         ::ng-deep {
           .palette {
             height: 160px;
@@ -94,8 +96,8 @@
 
   @media screen and (max-width: $breakpoint-small) {
     .content-wrapper {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 20px;
+      padding-right: 20px;
       max-width: 100%;
     }
   }
