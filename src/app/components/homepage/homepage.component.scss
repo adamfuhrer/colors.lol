@@ -49,6 +49,18 @@
         transform: translateX(0);
       }
     }
+
+    .empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .illustration {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 300px;
+      }
+    }
   }
 
   &.is-showing-single-palette {
@@ -84,11 +96,14 @@
         }
       }
     }
+
+    .content-wrapper {
+      margin-top: 40px;
+    }
   }
 
   @media screen and (max-width: $breakpoint-medium - 140px) {
     .content-wrapper {
-      margin-top: 40px;
       grid-template-columns: 1fr;
       grid-gap: 40px 0;
     }
