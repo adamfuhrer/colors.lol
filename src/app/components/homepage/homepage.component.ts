@@ -1,5 +1,5 @@
 import {Component, HostBinding, OnInit} from '@angular/core';
-import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {Color} from '../color-palette/color-palette.component';
 import {ColorFilterService} from '../../services/color-filter.service';
 import * as chroma from 'chroma-js';
@@ -1316,13 +1316,7 @@ export class HomepageComponent implements OnInit {
   unfilteredPalettes = [...this.palettes];
 
   constructor(private route: ActivatedRoute,
-              private router: Router,
               private colorFilterService: ColorFilterService) {
-    router.events.subscribe(nav => {
-      if (nav instanceof NavigationEnd) {
-        window.scrollTo(0, 0);
-      }
-    });
   }
 
   ngOnInit() {
