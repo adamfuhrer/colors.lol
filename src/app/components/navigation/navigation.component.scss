@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -108,6 +108,7 @@
       padding-right: 20px;
       border: 1px solid #CCCCCC;
       border-radius: 5px;
+      background: $white;
 
       &:hover {
         border: 1px solid $grey;
@@ -146,6 +147,54 @@
         height: 4px;
         border-radius: 3px;
         background: linear-gradient(to right, rgb(255, 68, 68), rgb(255, 152, 60), rgb(255, 233, 56), rgb(93, 255, 58), rgb(59, 254, 255), rgb(58, 187, 255), rgb(168, 55, 255), rgb(255, 62, 250));
+      }
+
+      &.red {
+        &::after {
+          background: #e83a30;
+        }
+      }
+
+      &.orange {
+        &::after {
+          background: #e88c30;
+        }
+      }
+
+      &.yellow {
+        &::after {
+          background: #e8e230;
+        }
+      }
+
+      &.green {
+        &::after {
+          background: #3ab650;
+        }
+      }
+
+      &.teal {
+        &::after {
+          background: #3bdeb8;
+        }
+      }
+
+      &.blue {
+        &::after {
+          background: #3080e8;
+        }
+      }
+
+      &.purple {
+        &::after {
+          background: #8a3cdd;
+        }
+      }
+
+      &.pink {
+        &::after {
+          background: #e830c7;
+        }
       }
     }
   }

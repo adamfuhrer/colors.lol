@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {ColorFilterService} from '../../services/color-filter.service';
 import {ActivationStart, Router} from '@angular/router';
+import {Color} from '../color-palette/color-palette.component';
 
 @Component({
   selector: 'app-navigation',
@@ -8,9 +9,18 @@ import {ActivationStart, Router} from '@angular/router';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-  colorFilters = ['#e83a30', '#e88c30', '#e8e230', '#3ab650', '#3bdeb8', '#3080e8', '#8a3cdd', '#e830c7'];
+  colorFilters = [
+    { hex: '#e83a30', description: 'red' },
+    { hex: '#e88c30', description: 'orange' },
+    { hex: '#e8e230', description: 'yellow' },
+    { hex: '#3ab650', description: 'green' },
+    { hex: '#3bdeb8', description: 'teal' },
+    { hex: '#3080e8', description: 'blue' },
+    { hex: '#8a3cdd', description: 'purple' },
+    { hex: '#e830c7', description: 'pink'}
+  ];
   isShowingFilters = true;
-  filterColor = null;
+  filterColor: Color = null;
 
   constructor(private colorFilterService: ColorFilterService,
               private router: Router) {
@@ -24,7 +34,7 @@ export class NavigationComponent {
     });
   }
 
-  onFilterClick(color: string) {
+  onFilterClick(color: Color) {
     this.colorFilterService.emitFilterColor(color);
     this.filterColor = color;
   }

@@ -239,6 +239,20 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
+        hex: '#728639',
+        description: 'limiest khaki green',
+      },
+      {
+        hex: '#062e03',
+        description: 'transient very dark green'
+      },
+      {
+        hex: '#ff964f',
+        description: 'ultrabasic pastel orange'
+      }
+    ],
+    [
+      {
         hex: '#d8dcd6',
         description: 'ungentlemanly light grey',
       },
@@ -277,6 +291,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#825f87',
         description: 'muttering dusty purple'
+      }
+    ],
+    [
+      {
+        hex: '#fe2c54',
+        description: 'unowned reddish pink',
+      },
+      {
+        hex: '#26f7fd',
+        description: 'soupier bright light blue'
+      },
+      {
+        hex: '#3e82fc',
+        description: 'bunted dodger blue'
       }
     ],
     [
@@ -423,20 +451,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#fde166',
-        description: 'gutsiest sand yellow',
-      },
-      {
-        hex: '#d46a7e',
-        description: 'revitalized pinkish'
-      },
-      {
-        hex: '#015f6b',
-        description: 'paper petrol'
-      }
-    ],
-    [
-      {
         hex: '#e17701',
         description: 'calycinal pumpkin',
       },
@@ -447,21 +461,6 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#ffd8b1',
         description: 'sorrowful light peach'
-      }
-    ],
-
-    [
-      {
-        hex: '#f7879a',
-        description: 'jagged rose pink',
-      },
-      {
-        hex: '#c88d94',
-        description: 'anaphylactic greyish pink'
-      },
-      {
-        hex: '#fac205',
-        description: 'strengthening goldenrod'
       }
     ],
     [
@@ -546,20 +545,6 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#0c1793',
         description: 'private royal'
-      }
-    ],
-    [
-      {
-        hex: '#fafe4b',
-        description: 'plantar sunflower',
-      },
-      {
-        hex: '#fed0fc',
-        description: 'requitable light salmon'
-      },
-      {
-        hex: '#fb5581',
-        description: 'otherwise bright purple'
       }
     ],
     [
@@ -649,6 +634,20 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
+        hex: '#76ff7b',
+        description: 'linear lightgreen',
+      },
+      {
+        hex: '#ff69af',
+        description: 'acanthoid bubble gum pink'
+      },
+      {
+        hex: '#5729ce',
+        description: 'micrococcal blue purple'
+      }
+    ],
+    [
+      {
         hex: '#7bc8f6',
         description: 'strawy lightblue',
       },
@@ -687,6 +686,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#13bbaf',
         description: 'vinegary topaz'
+      }
+    ],
+    [
+      {
+        hex: '#ffff14',
+        description: 'dodgy yellow',
+      },
+      {
+        hex: '#cb0162',
+        description: 'sporocystic deep pink'
+      },
+      {
+        hex: '#062e03',
+        description: 'battailous very dark green'
       }
     ],
     [
@@ -731,20 +744,7 @@ export class HomepageComponent implements OnInit {
         description: 'natural night blue'
       }
     ],
-    [
-      {
-        hex: '#014d4e',
-        description: 'unenvying dark teal',
-      },
-      {
-        hex: '#f4320c',
-        description: 'unindexed vermillion'
-      },
-      {
-        hex: '#3f012c',
-        description: 'scrupulous dark plum'
-      }
-    ],
+
 
     [
       {
@@ -988,6 +988,20 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
+        hex: '#d99b82',
+        description: 'frank pinkish tan',
+      },
+      {
+        hex: '#980002',
+        description: 'unaware blood red'
+      },
+      {
+        hex: '#d90166',
+        description: 'stripier dark hot pink'
+      }
+    ],
+    [
+      {
         hex: '#6c3461',
         description: 'unartificial grape',
       },
@@ -1000,7 +1014,6 @@ export class HomepageComponent implements OnInit {
         description: 'albuminoid jungle green'
       }
     ],
-
     [
       {
         hex: '#f5bf03',
@@ -1013,20 +1026,6 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#3c4142',
         description: 'unprompted charcoal grey'
-      }
-    ],
-    [
-      {
-        hex: '#d99b82',
-        description: 'frank pinkish tan',
-      },
-      {
-        hex: '#980002',
-        description: 'unaware blood red'
-      },
-      {
-        hex: '#d90166',
-        description: 'stripier dark hot pink'
       }
     ],
     [
@@ -1143,16 +1142,16 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#ff6163',
-        description: 'unteachable coral pink',
+        hex: '#fde166',
+        description: 'gutsiest sand yellow',
       },
       {
-        hex: '#750851',
-        description: 'foolhardier velvet'
+        hex: '#d46a7e',
+        description: 'revitalized pinkish'
       },
       {
-        hex: '#920a4e',
-        description: 'nervous mulberry'
+        hex: '#015f6b',
+        description: 'paper petrol'
       }
     ],
     [
@@ -1213,6 +1212,34 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
+        hex: '#fafe4b',
+        description: 'plantar sunflower',
+      },
+      {
+        hex: '#fed0fc',
+        description: 'requitable light salmon'
+      },
+      {
+        hex: '#fb5581',
+        description: 'otherwise bright purple'
+      }
+    ],
+    [
+      {
+        hex: '#014d4e',
+        description: 'unenvying dark teal',
+      },
+      {
+        hex: '#f4320c',
+        description: 'unindexed vermillion'
+      },
+      {
+        hex: '#3f012c',
+        description: 'scrupulous dark plum'
+      }
+    ],
+    [
+      {
         hex: '#ffc512',
         description: 'silvern sunflower',
       },
@@ -1224,7 +1251,52 @@ export class HomepageComponent implements OnInit {
         hex: '#0485d1',
         description: 'philosophical cerulean'
       }
-    ]
+    ],
+
+
+    [
+      {
+        hex: '#6a6e09',
+        description: 'overfull brownish green',
+      },
+      {
+        hex: '#ffe5ad',
+        description: 'lanky pale peach'
+      },
+      {
+        hex: '#5170d7',
+        description: 'bonzer cornflower blue'
+      }
+    ],
+    [
+      {
+        hex: '#0504aa',
+        description: 'unrecallable royal blue',
+      },
+      {
+        hex: '#ff63e9',
+        description: 'syncarpous candy pink'
+      },
+      {
+        hex: '#017374',
+        description: 'waning deep turquoise'
+      }
+    ],
+    [
+      {
+        hex: '#6c3461',
+        description: 'sensed grape',
+      },
+      {
+        hex: '#fffe71',
+        description: 'orthodontic pastel yellow'
+      },
+      {
+        hex: '#c3909b',
+        description: 'woebegone grey pink'
+      }
+    ],
+
     // [
     //   {
     //     hex: '',
@@ -1239,34 +1311,7 @@ export class HomepageComponent implements OnInit {
     //     description: ''
     //   }
     // ],
-    // [
-    //   {
-    //     hex: '',
-    //     description: '',
-    //   },
-    //   {
-    //     hex: '',
-    //     description: ''
-    //   },
-    //   {
-    //     hex: '',
-    //     description: ''
-    //   }
-    // ],
-    // [
-    //   {
-    //     hex: '',
-    //     description: '',
-    //   },
-    //   {
-    //     hex: '',
-    //     description: ''
-    //   },
-    //   {
-    //     hex: '',
-    //     description: ''
-    //   }
-    // ],
+
   ];
   unfilteredPalettes = [...this.palettes];
 
@@ -1290,8 +1335,8 @@ export class HomepageComponent implements OnInit {
         this.palettes = this.unfilteredPalettes;
         // Compare the filter color to the colours of each palette. If there is a similar match, show the color in list of filtered results
         this.palettes = this.palettes.filter(palette => {
-          return palette.some(c => chroma.deltaE(c.hex, color) < 20) ||
-            palette.some(c => chroma.deltaE(c.hex, chroma(color).desaturate(1.4)) < 20);
+          return palette.some(c => chroma.deltaE(c.hex, color.hex) < 20) ||
+            palette.some(c => chroma.deltaE(c.hex, chroma(color.hex).desaturate(1.4)) < 20);
         });
       } else {
         this.palettes = this.unfilteredPalettes;
