@@ -22,7 +22,12 @@
       transition: $transition-normal;
     }
 
+    &.twitter {
+      right: -50px;
+    }
+
     &:hover, &:focus {
+      cursor: pointer;
       transition: $transition-normal;
 
       svg {
@@ -101,6 +106,10 @@
       right: 0;
       width: 40px;
       height: 40px;
+
+      &.twitter {
+        right: 0;
+      }
 
       svg {
         fill: rgba(255, 255, 255, 0.8);

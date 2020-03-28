@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { Platform } from '@angular/cdk/platform';
+import { ShareModule } from '@ngx-share/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,9 +28,15 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ShareModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
-  providers: [ColorFilterService],
+  providers: [
+    ColorFilterService,
+    Platform
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

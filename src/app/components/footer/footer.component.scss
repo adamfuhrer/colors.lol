@@ -20,12 +20,15 @@
       color: $grey;
 
       + li {
-        margin-left: 24px;
+        margin-left: 20px;
       }
 
       a {
         color: $oil;
         transition: $transition-normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover, &:focus {
            color: $pink;
@@ -33,8 +36,8 @@
       }
 
       a.icon {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
 
         &:hover, &:focus {
           svg {
@@ -44,8 +47,8 @@
 
         svg {
           transition: $transition-normal;
-          width: 18px;
-          height: 18px;
+          width: 16px;
+          height: 16px;
           fill: $grey;
         }
       }
