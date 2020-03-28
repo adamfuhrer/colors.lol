@@ -7,7 +7,7 @@ import {animate, AnimationBuilder, style} from '@angular/animations';
 })
 export class FadeInDirective  implements OnChanges {
   @Input('fadeIn') fadeIn: boolean;
-  @Input() fadeDuration = '700ms';
+  @Input() fadeDuration = '600ms';
   fadeAnimation: any;
   player: any;
 
