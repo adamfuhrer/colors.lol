@@ -1,5 +1,6 @@
 import {Component, HostBinding, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {Title} from '@angular/platform-browser';
 import {Color} from '../color-palette/color-palette.component';
 import {ColorFilterService} from '../../services/color-filter.service';
 import * as chroma from 'chroma-js';
@@ -1356,12 +1357,19 @@ export class HomepageComponent implements OnInit {
   unfilteredPalettes = [...this.palettes];
 
   constructor(private route: ActivatedRoute,
-              private colorFilterService: ColorFilterService) {
+              private colorFilterService: ColorFilterService,
+              private titleService: Title) {
   }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
       this.paletteParam = params.get('id');
+
+      if (this.paletteParam) {
+        this.titleService.setTitle(this.paletteParam + ' palette | colors.lol');
+      } else {
+        this.titleService.setTitle('colors.lol - Overly descriptive color palettes');
+      }
     });
 
     this.colorFilterService.filterColor.subscribe(color => {
@@ -1376,7 +1384,6 @@ export class HomepageComponent implements OnInit {
         this.palettes = this.unfilteredPalettes;
       }
     });
-    console.log(this.palettes.length);
   }
 
   getPaletteParamId(palette: Color[]): string {
