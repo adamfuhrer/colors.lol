@@ -227,7 +227,7 @@ export class HomepageComponent implements OnInit {
     [
       {
         hex: '#f19e8e',
-        description: 'outward-bound slate grey',
+        description: 'cross-sectional blush'
       },
       {
         hex: '#98756f',
@@ -235,7 +235,7 @@ export class HomepageComponent implements OnInit {
       },
       {
         hex: '#58656d',
-        description: 'cross-sectional blush'
+        description: 'outward-bound slate grey'
       }
     ],
     [
@@ -619,20 +619,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#826d8c',
-        description: 'bivalvular grey purple',
-      },
-      {
-        hex: '#c88d94',
-        description: 'bicuspidate greyish pink'
-      },
-      {
-        hex: '#84597e',
-        description: 'ivied dull purple'
-      }
-    ],
-    [
-      {
         hex: '#ff964f',
         description: 'tidied pastel orange',
       },
@@ -643,6 +629,34 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#59656d',
         description: 'foveate slate grey'
+      }
+    ],
+    [
+      {
+        hex: '#b04e0f',
+        description: 'matchmaker burnt sienna',
+      },
+      {
+        hex: '#fa5ff7',
+        description: 'abridged light magenta'
+      },
+      {
+        hex: '#ffc512',
+        description: 'unrelished sunflower'
+      }
+    ],
+    [
+      {
+        hex: '#826d8c',
+        description: 'bivalvular grey purple',
+      },
+      {
+        hex: '#c88d94',
+        description: 'bicuspidate greyish pink'
+      },
+      {
+        hex: '#84597e',
+        description: 'ivied dull purple'
       }
     ],
     [
@@ -689,6 +703,20 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
+        hex: '#ff9a8a',
+        description: 'fearless peachy pink',
+      },
+      {
+        hex: '#2e5a88',
+        description: 'middle-aged light navy blue'
+      },
+      {
+        hex: '#a09bd7',
+        description: 'sec bubblegum pink'
+      }
+    ],
+    [
+      {
         hex: '#d3494e',
         description: 'calibred faded red',
       },
@@ -717,20 +745,6 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
-        hex: '#fddc5c',
-        description: 'ground light gold',
-      },
-      {
-        hex: '#fdfdfe',
-        description: 'thatchless pale grey'
-      },
-      {
-        hex: '#bdf6fe',
-        description: 'replaceable pale sky blue'
-      }
-    ],
-    [
-      {
         hex: '#005249',
         description: 'unmeasured dark blue green',
       },
@@ -741,6 +755,20 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#ffbacd',
         description: 'unshakable pastel pink'
+      }
+    ],
+    [
+      {
+        hex: '#fddc5c',
+        description: 'ground light gold',
+      },
+      {
+        hex: '#fdfdfe',
+        description: 'thatchless pale grey'
+      },
+      {
+        hex: '#bdf6fe',
+        description: 'replaceable pale sky blue'
       }
     ],
     [
@@ -757,8 +785,6 @@ export class HomepageComponent implements OnInit {
         description: 'natural night blue'
       }
     ],
-
-
     [
       {
         hex: '#AFA88A',
@@ -898,20 +924,6 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#f43605',
         description: 'panting orangish red'
-      }
-    ],
-    [
-      {
-        hex: '#3c4142',
-        description: 'honorable charcoal grey',
-      },
-      {
-        hex: '#13bbaf',
-        description: 'fundamental topaz'
-      },
-      {
-        hex: '#edc8ff',
-        description: 'prothetic light lilac'
       }
     ],
     [
@@ -1126,6 +1138,20 @@ export class HomepageComponent implements OnInit {
     ],
     [
       {
+        hex: '#3c4142',
+        description: 'honorable charcoal grey',
+      },
+      {
+        hex: '#13bbaf',
+        description: 'fundamental topaz'
+      },
+      {
+        hex: '#edc8ff',
+        description: 'prothetic light lilac'
+      }
+    ],
+    [
+      {
         hex: '#fdc1c5',
         description: 'excommunicate pale rose',
       },
@@ -1278,8 +1304,6 @@ export class HomepageComponent implements OnInit {
         description: 'philosophical cerulean'
       }
     ],
-
-
     [
       {
         hex: '#6a6e09',
@@ -1292,20 +1316,6 @@ export class HomepageComponent implements OnInit {
       {
         hex: '#5170d7',
         description: 'bonzer cornflower blue'
-      }
-    ],
-    [
-      {
-        hex: '#0504aa',
-        description: 'unrecallable royal blue',
-      },
-      {
-        hex: '#ff63e9',
-        description: 'syncarpous candy pink'
-      },
-      {
-        hex: '#017374',
-        description: 'waning deep turquoise'
       }
     ],
     [
@@ -1336,8 +1346,48 @@ export class HomepageComponent implements OnInit {
         description: 'revelational medium grey'
       }
     ],
-
-
+    [
+      {
+        hex: '#341c02',
+        description: 'subaltern dark brown',
+      },
+      {
+        hex: '#c9b003',
+        description: 'anonymous brownish yellow'
+      },
+      {
+        hex: '#fffd78',
+        description: 'disconcerting custard'
+      }
+    ],
+    [
+      {
+        hex: '#b9ff66',
+        description: 'viscid light lime green',
+      },
+      {
+        hex: '#c071fe',
+        description: 'built easter purple'
+      },
+      {
+        hex: '#5b7c99',
+        description: 'longitudinal slate blue'
+      }
+    ],
+    [
+      {
+        hex: '#0504aa',
+        description: 'unrecallable royal blue',
+      },
+      {
+        hex: '#ff63e9',
+        description: 'syncarpous candy pink'
+      },
+      {
+        hex: '#017374',
+        description: 'waning deep turquoise'
+      }
+    ],
     // [
     //   {
     //     hex: '',
@@ -1352,7 +1402,48 @@ export class HomepageComponent implements OnInit {
     //     description: ''
     //   }
     // ],
-
+    // [
+    //   {
+    //     hex: '',
+    //     description: '',
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   }
+    // ],
+    // [
+    //   {
+    //     hex: '',
+    //     description: '',
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   }
+    // ],
+    // [
+    //   {
+    //     hex: '',
+    //     description: '',
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   },
+    //   {
+    //     hex: '',
+    //     description: ''
+    //   }
+    // ],
   ];
   unfilteredPalettes = [...this.palettes];
 
