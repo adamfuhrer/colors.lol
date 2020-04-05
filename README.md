@@ -4,4 +4,4 @@ Created as a fun way to discover interesting color combinations. Palettes are ha
 
 Website: [colors.lol](https://colors.lol/)
 
-![palettes](https://www.colors.lol/assets/images/palettes.png)
+[![palettes](https://www.colors.lol/assets/images/palettes.png)](https://colors.lol/)
