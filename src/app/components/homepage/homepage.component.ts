@@ -5,7 +5,7 @@ import {Color} from '../color-palette/color-palette.component';
 import {ColorFilterService} from '../../services/color-filter.service';
 
 import * as chroma from 'chroma-js';
-import * as colors from '../../colors.json';
+import colors from '../../colors.json';
 
 @Component({
   selector: 'app-homepage',
@@ -20,6 +20,13 @@ export class HomepageComponent implements OnInit {
   constructor(private route: ActivatedRoute,
               private colorFilterService: ColorFilterService,
               private titleService: Title) {
+    // Parse JSON
+    const palettes = [];
+    for (const key in colors) {
+      palettes.push(colors[key]);
+    }
+    this.palettes = palettes[0];
+    this.unfilteredPalettes = this.palettes;
   }
 
   ngOnInit() {
@@ -45,16 +52,6 @@ export class HomepageComponent implements OnInit {
         this.palettes = this.unfilteredPalettes;
       }
     });
-
-    // Parse JSON
-    const palettes = [];
-    const keys = Object.keys(colors);
-    keys.forEach(key => {
-      palettes.push(colors[key]);
-    });
-
-    this.palettes = palettes[0];
-    this.unfilteredPalettes = this.palettes;
   }
 
   getPaletteParamId(palette: Color[]): string {
