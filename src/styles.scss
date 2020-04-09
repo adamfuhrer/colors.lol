@@ -15,7 +15,7 @@ a {
   transition: color 350ms $ease 0s;
 
   &:hover, &:focus {
-    color: darken($pink, 6%);
+    color: darken($pink, 8%);
     outline: none;
   }
 }

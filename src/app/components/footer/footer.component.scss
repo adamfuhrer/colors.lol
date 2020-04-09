@@ -4,52 +4,46 @@
   display: flex;
   justify-content: center;
 
-  ul {
+  nav {
     display: flex;
     flex-direction: row;
     max-width: $content-width;
     width: 100%;
     padding: 30px 20px;
 
-    li {
+    a {
       display: flex;
       align-items: center;
+      justify-content: center;
       height: 30px;
       font-weight: $light;
       font-size: 1.6rem;
-      color: $grey;
+      color: #666666;
+      transition: $transition-normal;
 
-      + li {
+      + a {
         margin-left: 20px;
       }
 
-      a {
-        color: $oil;
-        transition: $transition-normal;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      &:hover, &:focus {
+         color: $pink;
+      }
+    }
 
-        &:hover, &:focus {
-           color: $pink;
-        }
+    a.icon {
+      width: 20px;
+      height: 30px;
+
+      svg {
+        transition: $transition-normal;
+        width: 16px;
+        height: 16px;
+        fill: $grey;
       }
 
-      a.icon {
-        width: 20px;
-        height: 20px;
-
-        &:hover, &:focus {
-          svg {
-            fill: $pink;
-          }
-        }
-
+      &:hover, &:focus {
         svg {
-          transition: $transition-normal;
-          width: 16px;
-          height: 16px;
-          fill: $grey;
+          fill: $pink;
         }
       }
     }

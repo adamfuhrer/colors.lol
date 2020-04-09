@@ -1,4 +1,4 @@
-<nav>
+<nav aria-label="Main navigation">
   <div *ngIf="isShowingFilters" class="filters">
     <span class="label">
       FILTER:
@@ -6,13 +6,15 @@
     <div class="filters-wrapper">
       <button *ngFor="let color of colorFilters"
               class="color"
-              [name]="color.description"
+              [attr.title]="color.description + ' filter' | titlecase"
+              [attr.name]="color.description + ' filter' | titlecase"
               [style.background]="color.hex"
               (click)="onFilterClick(color)">
       </button>
       <button *ngIf="filterColor"
               class="clear-filter"
-              name="Clear Filter"
+              [attr.title]="'Clear ' + filterColor.description + ' filter'"
+              [attr.name]="'Clear ' + filterColor.description + ' filter'"
               [style.background]="filterColor.hex"
               (click)="onFilterClick(null)">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0" y="0" viewBox="0 0 512 512" xml:space="preserve" enable-background="new 0 0 512 512">

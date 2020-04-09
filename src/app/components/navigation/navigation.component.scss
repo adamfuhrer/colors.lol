@@ -45,6 +45,24 @@
         border-radius: 5px;
         overflow: hidden;
 
+        button.color {
+          width: 20px;
+          height: 100%;
+          transition: $transition-normal;
+          position: relative;
+
+          &::after {
+            @include opacity-hover;
+          }
+
+          &:hover, &:focus {
+            &::after {
+              background: rgba(255, 255, 255, 0.30);
+              transition: background 700ms $ease 0s;
+            }
+          }
+        }
+
         button.clear-filter {
           display: flex;
           align-items: center;
@@ -61,7 +79,7 @@
             @include opacity-hover;
           }
 
-          &:hover {
+          &:hover, &:focus {
             &::after {
               background: rgba(255, 255, 255, 0.30);
               transition: background 700ms $ease 0s;
@@ -72,24 +90,6 @@
             width: 20px;
             height: 20px;
             fill: $white;
-          }
-        }
-      }
-
-      .color {
-        width: 20px;
-        height: 100%;
-        transition: $transition-normal;
-        position: relative;
-
-        &::after {
-          @include opacity-hover;
-        }
-
-        &:hover {
-          &::after {
-            background: rgba(255, 255, 255, 0.30);
-            transition: background 700ms $ease 0s;
           }
         }
       }
@@ -108,9 +108,9 @@
       padding-right: 20px;
       border: 1px solid #CCCCCC;
       border-radius: 5px;
-      background: $white;
+      background-color: $white;
 
-      &:hover {
+      &:hover, &:focus {
         border: 1px solid $grey;
       }
     }

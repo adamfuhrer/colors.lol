@@ -7,7 +7,10 @@
     </app-color-palette>
   </ng-container>
   <h5 *ngIf="paletteParam && !isPaletteFound()" class="empty">
-    <img src="../../../assets/images/not-found.svg" alt="Palette not found" class="illustration">
+    <img src="../../../assets/images/not-found.svg"
+         title="Palette cannot be found"
+         alt="Palette cannot be found"
+         class="illustration">
     Palette cannot be found.
   </h5>
   <a *ngIf="paletteParam && paletteParam !== 'about'"
