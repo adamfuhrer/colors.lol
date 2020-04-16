@@ -34,8 +34,10 @@ export class HomepageComponent implements OnInit, OnDestroy {
     this.route.paramMap.subscribe(params => {
       this.paletteParam = params.get('id');
 
-      if (this.paletteParam) {
+      if (this.paletteParam && this.isPaletteFound()) {
         this.titleService.setTitle(this.paletteParam + ' palette | colors.lol');
+      } else if (this.paletteParam && !this.isPaletteFound()) {
+        this.titleService.setTitle('Unknown palette | colors.lol');
       } else {
         this.titleService.setTitle('colors.lol - Overly descriptive color palettes');
       }
