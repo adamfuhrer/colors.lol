@@ -226,16 +226,16 @@
     ],
     [
       {
-        "hex": "#fe019a",
-        "description": "immediate neon pink"
+        "hex": "#47c072",
+        "description": "beauish dark mint"
       },
       {
-        "hex": "#5a06ef",
-        "description": "spicate blue/purple"
+        "hex": "#ff0789",
+        "description": "pediculous strong pink"
       },
       {
-        "hex": "#fcfc81",
-        "description": "supplicatory yellowish tan"
+        "hex": "#fcb005",
+        "description": "isocyclic yellow orange"
       }
     ],
     [
@@ -268,20 +268,6 @@
     ],
     [
       {
-        "hex": "#82a67d",
-        "description": "uninviting greyish green"
-      },
-      {
-        "hex": "#2dfe54",
-        "description": "cultrate bright light green"
-      },
-      {
-        "hex": "#825f87",
-        "description": "muttering dusty purple"
-      }
-    ],
-    [
-      {
         "hex": "#fe2c54",
         "description": "unowned reddish pink"
       },
@@ -296,6 +282,34 @@
     ],
     [
       {
+        "hex": "#82a67d",
+        "description": "uninviting greyish green"
+      },
+      {
+        "hex": "#2dfe54",
+        "description": "cultrate bright light green"
+      },
+      {
+        "hex": "#825f87",
+        "description": "muttering dusty purple"
+      }
+    ],
+    [
+      {
+        "hex": "#fe019a",
+        "description": "immediate neon pink"
+      },
+      {
+        "hex": "#5a06ef",
+        "description": "spicate blue/purple"
+      },
+      {
+        "hex": "#fcfc81",
+        "description": "supplicatory yellowish tan"
+      }
+    ],
+    [
+      {
         "hex": "#000133",
         "description": "piscine very dark blue"
       },
@@ -306,20 +320,6 @@
       {
         "hex": "#d8dcd6",
         "description": "work-shy light grey "
-      }
-    ],
-    [
-      {
-        "hex": "#fea993",
-        "description": "cabbalistical light salmon"
-      },
-      {
-        "hex": "#fe02a2",
-        "description": "premeditative shocking pink"
-      },
-      {
-        "hex": "#fdee73",
-        "description": "encircled sandy yellow"
       }
     ],
     [
@@ -366,6 +366,20 @@
     ],
     [
       {
+        "hex": "#fea993",
+        "description": "cabbalistical light salmon"
+      },
+      {
+        "hex": "#fe02a2",
+        "description": "premeditative shocking pink"
+      },
+      {
+        "hex": "#fdee73",
+        "description": "encircled sandy yellow"
+      }
+    ],
+    [
+      {
         "hex": "#5d21d0",
         "description": "gamier purple/blue"
       },
@@ -380,20 +394,6 @@
     ],
     [
       {
-        "hex": "#fdc1c5",
-        "description": "undescribable pale rose"
-      },
-      {
-        "hex": "#f6688e",
-        "description": "statesmanly rosy pink"
-      },
-      {
-        "hex": "#805b87",
-        "description": "hunky muted purple"
-      }
-    ],
-    [
-      {
         "hex": "#ffd8b1",
         "description": "unfretted light peach"
       },
@@ -404,6 +404,20 @@
       {
         "hex": "#610023",
         "description": "confiscable burgundy"
+      }
+    ],
+    [
+      {
+        "hex": "#fdc1c5",
+        "description": "undescribable pale rose"
+      },
+      {
+        "hex": "#f6688e",
+        "description": "statesmanly rosy pink"
+      },
+      {
+        "hex": "#805b87",
+        "description": "hunky muted purple"
       }
     ],
     [
@@ -590,6 +604,20 @@
     ],
     [
       {
+        "hex": "#e78ea5",
+        "description": "integrative pig pink"
+      },
+      {
+        "hex": "#feb8ce",
+        "description": "multiscreen baby pink"
+      },
+      {
+        "hex": "#373737",
+        "description": "eerie dark grey"
+      }
+    ],
+    [
+      {
         "hex": "#677a04",
         "description": "unblenching olive green"
       },
@@ -600,20 +628,6 @@
       {
         "hex": "#33b864",
         "description": "appropriate cool green"
-      }
-    ],
-    [
-      {
-        "hex": "#ff964f",
-        "description": "tidied pastel orange"
-      },
-      {
-        "hex": "#d46a7e",
-        "description": "unalienable pinkish"
-      },
-      {
-        "hex": "#59656d",
-        "description": "foveate slate grey"
       }
     ],
     [
@@ -632,16 +646,16 @@
     ],
     [
       {
-        "hex": "#826d8c",
-        "description": "bivalvular grey purple"
+        "hex": "#ff964f",
+        "description": "tidied pastel orange"
       },
       {
-        "hex": "#c88d94",
-        "description": "bicuspidate greyish pink"
+        "hex": "#d46a7e",
+        "description": "unalienable pinkish"
       },
       {
-        "hex": "#84597e",
-        "description": "ivied dull purple"
+        "hex": "#59656d",
+        "description": "foveate slate grey"
       }
     ],
     [
@@ -660,20 +674,6 @@
     ],
     [
       {
-        "hex": "#7bc8f6",
-        "description": "strawy lightblue"
-      },
-      {
-        "hex": "#a7ffb5",
-        "description": "consulting light seafoam green"
-      },
-      {
-        "hex": "#feb2d0",
-        "description": "citrus powder pink"
-      }
-    ],
-    [
-      {
         "hex": "#1b2431",
         "description": "blocky dark"
       },
@@ -684,6 +684,20 @@
       {
         "hex": "#1e488f",
         "description": "ordained cobalt"
+      }
+    ],
+    [
+      {
+        "hex": "#7bc8f6",
+        "description": "strawy lightblue"
+      },
+      {
+        "hex": "#a7ffb5",
+        "description": "consulting light seafoam green"
+      },
+      {
+        "hex": "#feb2d0",
+        "description": "citrus powder pink"
       }
     ],
     [
@@ -730,20 +744,6 @@
     ],
     [
       {
-        "hex": "#005249",
-        "description": "unmeasured dark blue green"
-      },
-      {
-        "hex": "#ff0490",
-        "description": "admissible electric pink"
-      },
-      {
-        "hex": "#ffbacd",
-        "description": "unshakable pastel pink"
-      }
-    ],
-    [
-      {
         "hex": "#fddc5c",
         "description": "ground light gold"
       },
@@ -772,16 +772,16 @@
     ],
     [
       {
-        "hex": "#AFA88A",
-        "description": "oncogenic bland"
+        "hex": "#005249",
+        "description": "unmeasured dark blue green"
       },
       {
-        "hex": "#FD5956",
-        "description": "oogamous grapefruit"
+        "hex": "#ff0490",
+        "description": "admissible electric pink"
       },
       {
-        "hex": "#CD5908",
-        "description": "unconsenting rusty orange"
+        "hex": "#ffbacd",
+        "description": "unshakable pastel pink"
       }
     ],
     [
@@ -796,6 +796,20 @@
       {
         "hex": "#cffdbc",
         "description": "uncloistered very pale green"
+      }
+    ],
+    [
+      {
+        "hex": "#AFA88A",
+        "description": "oncogenic bland"
+      },
+      {
+        "hex": "#FD5956",
+        "description": "oogamous grapefruit"
+      },
+      {
+        "hex": "#CD5908",
+        "description": "unconsenting rusty orange"
       }
     ],
     [
@@ -870,6 +884,20 @@
     ],
     [
       {
+        "hex": "#fd8d49",
+        "description": "held orangeish"
+      },
+      {
+        "hex": "#fdde6c",
+        "description": "psychrometric pale gold"
+      },
+      {
+        "hex": "#f43605",
+        "description": "panting orangish red"
+      }
+    ],
+    [
+      {
         "hex": "#000133",
         "description": "podgy very dark blue"
       },
@@ -896,20 +924,7 @@
         "description": "pyelitic dark indigo"
       }
     ],
-    [
-      {
-        "hex": "#fd8d49",
-        "description": "held orangeish"
-      },
-      {
-        "hex": "#fdde6c",
-        "description": "psychrometric pale gold"
-      },
-      {
-        "hex": "#f43605",
-        "description": "panting orangish red"
-      }
-    ],
+
     [
       {
         "hex": "#fedf08",
@@ -1006,20 +1021,6 @@
       {
         "hex": "#6b7c85",
         "description": "cubic battleship grey"
-      }
-    ],
-    [
-      {
-        "hex": "#d99b82",
-        "description": "frank pinkish tan"
-      },
-      {
-        "hex": "#980002",
-        "description": "unaware blood red"
-      },
-      {
-        "hex": "#d90166",
-        "description": "stripier dark hot pink"
       }
     ],
     [
@@ -1178,6 +1179,20 @@
     ],
     [
       {
+        "hex": "#826d8c",
+        "description": "bivalvular grey purple"
+      },
+      {
+        "hex": "#c88d94",
+        "description": "bicuspidate greyish pink"
+      },
+      {
+        "hex": "#84597e",
+        "description": "ivied dull purple"
+      }
+    ],
+    [
+      {
         "hex": "#fde166",
         "description": "gutsiest sand yellow"
       },
@@ -1192,20 +1207,6 @@
     ],
     [
       {
-        "hex": "#f6688e",
-        "description": "bastardized rosy pink"
-      },
-      {
-        "hex": "#cb416b",
-        "description": "ocular dark pink"
-      },
-      {
-        "hex": "#ffb19a",
-        "description": "sulkies pale salmon"
-      }
-    ],
-    [
-      {
         "hex": "#b9cc81",
         "description": "cantharidian pale olive"
       },
@@ -1216,6 +1217,20 @@
       {
         "hex": "#748500",
         "description": "pizzicato swamp green"
+      }
+    ],
+    [
+      {
+        "hex": "#f6688e",
+        "description": "bastardized rosy pink"
+      },
+      {
+        "hex": "#cb416b",
+        "description": "ocular dark pink"
+      },
+      {
+        "hex": "#ffb19a",
+        "description": "sulkies pale salmon"
       }
     ],
     [
@@ -1262,20 +1277,6 @@
     ],
     [
       {
-        "hex": "#014d4e",
-        "description": "unenvying dark teal"
-      },
-      {
-        "hex": "#f4320c",
-        "description": "unindexed vermillion"
-      },
-      {
-        "hex": "#3f012c",
-        "description": "scrupulous dark plum"
-      }
-    ],
-    [
-      {
         "hex": "#ffc512",
         "description": "silvern sunflower"
       },
@@ -1290,16 +1291,16 @@
     ],
     [
       {
-        "hex": "#6a6e09",
-        "description": "overfull brownish green"
+        "hex": "#014d4e",
+        "description": "unenvying dark teal"
       },
       {
-        "hex": "#ffe5ad",
-        "description": "lanky pale peach"
+        "hex": "#f4320c",
+        "description": "unindexed vermillion"
       },
       {
-        "hex": "#5170d7",
-        "description": "bonzer cornflower blue"
+        "hex": "#3f012c",
+        "description": "scrupulous dark plum"
       }
     ],
     [
@@ -1318,6 +1319,34 @@
     ],
     [
       {
+        "hex": "#bffe27",
+        "description": "inexhaustible lemon lime"
+      },
+      {
+        "hex": "#fd4b04",
+        "description": "numbing blood orange"
+      },
+      {
+        "hex": "#d726de",
+        "description": "jimp purple/pink"
+      }
+    ],
+    [
+      {
+        "hex": "#6a6e09",
+        "description": "overfull brownish green"
+      },
+      {
+        "hex": "#ffe5ad",
+        "description": "lanky pale peach"
+      },
+      {
+        "hex": "#5170d7",
+        "description": "bonzer cornflower blue"
+      }
+    ],
+    [
+      {
         "hex": "#f10c45",
         "description": "unsound pinkish red"
       },
@@ -1332,20 +1361,6 @@
     ],
     [
       {
-        "hex": "#341c02",
-        "description": "subaltern dark brown"
-      },
-      {
-        "hex": "#c9b003",
-        "description": "anonymous brownish yellow"
-      },
-      {
-        "hex": "#fffd78",
-        "description": "disconcerting custard"
-      }
-    ],
-    [
-      {
         "hex": "#b9ff66",
         "description": "viscid light lime green"
       },
@@ -1356,6 +1371,20 @@
       {
         "hex": "#5b7c99",
         "description": "longitudinal slate blue"
+      }
+    ],
+    [
+      {
+        "hex": "#341c02",
+        "description": "subaltern dark brown"
+      },
+      {
+        "hex": "#c9b003",
+        "description": "anonymous brownish yellow"
+      },
+      {
+        "hex": "#fffd78",
+        "description": "disconcerting custard"
       }
     ],
     [
