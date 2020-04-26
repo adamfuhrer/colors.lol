@@ -69,10 +69,7 @@ export class HomepageComponent implements OnInit, OnDestroy {
   }
 
   isPaletteFound(): boolean {
-    const paletteIds = [];
-    this.palettes.forEach(palette => {
-      paletteIds.push(palette[0].description.split(' ')[0]);
-    });
+    const paletteIds = this.palettes.map(palette => this.getPaletteParamId(palette));
     return paletteIds.includes(this.paletteParam);
   }
 }
