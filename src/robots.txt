@@ -1,2 +1,4 @@
+Sitemap: https://colors.lol/sitemap.xml
+
 User-agent: *
 Allow: /
