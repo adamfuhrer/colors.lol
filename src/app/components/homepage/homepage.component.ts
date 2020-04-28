@@ -1,10 +1,9 @@
 import {Component, HostBinding, OnDestroy, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Title} from '@angular/platform-browser';
 import {Color} from '../color-palette/color-palette.component';
 import {ColorFilterService} from '../../services/color-filter.service';
 import {Subscription} from 'rxjs';
-
 import * as chroma from 'chroma-js';
 import palettes from '../../palettes.json';
 
@@ -20,14 +19,11 @@ export class HomepageComponent implements OnInit, OnDestroy {
   colorFilterSubscription: Subscription;
 
   constructor(private route: ActivatedRoute,
+              private router: Router,
               private colorFilterService: ColorFilterService,
               private titleService: Title) {
-    const pals = [];
-    for (const key in palettes) {
-      pals.push(palettes[key]);
-    }
-    this.palettes = pals[0];
-    this.unfilteredPalettes = this.palettes;
+    this.palettes = Object.values(palettes)[0];
+    this.unfilteredPalettes = [...this.palettes];
   }
 
   ngOnInit(): void {
@@ -36,6 +32,13 @@ export class HomepageComponent implements OnInit, OnDestroy {
 
       if (this.paletteParam && this.isPaletteFound()) {
         this.titleService.setTitle(this.paletteParam + ' palette | colors.lol');
+      } else if (this.paletteParam && this.paletteParam === 'random') {
+        this.colorFilterService.emitFilterColor(null);
+        const randomPalette = this.getRandomPaletteId();
+
+        this.router.navigateByUrl('/' + randomPalette).then(() => {
+          this.titleService.setTitle(randomPalette + ' palette | colors.lol');
+        });
       } else if (this.paletteParam && !this.isPaletteFound()) {
         this.titleService.setTitle('Unknown palette | colors.lol');
       } else {
@@ -43,12 +46,11 @@ export class HomepageComponent implements OnInit, OnDestroy {
       }
     });
 
+    // Compare the filter color to the colors of each palette
+    // If there is a similar match, show the color in list of filtered results
     this.colorFilterSubscription = this.colorFilterService.filterColor.subscribe(color => {
       if (color) {
-        this.palettes = this.unfilteredPalettes;
-        // Compare the filter color to the colours of each palette
-        // If there is a similar match, show the color in list of filtered results
-        this.palettes = this.palettes.filter(palette => {
+        this.palettes = [...this.unfilteredPalettes].filter(palette => {
           return palette.some(c => chroma.deltaE(c.hex, color.hex) < 20) ||
             palette.some(c => chroma.deltaE(c.hex, chroma(color.hex).desaturate(1.4)) < 18);
         });
@@ -64,12 +66,20 @@ export class HomepageComponent implements OnInit, OnDestroy {
     }
   }
 
-  getPaletteParamId(palette: Color[]): string {
+  getPaletteId(palette: Color[]): string {
     return palette[0].description.split(' ')[0];
   }
 
+  getRandomPaletteId(): string {
+    return this.getPaletteId(this.unfilteredPalettes[this.generateRandomNumber(this.unfilteredPalettes.length - 1)]);
+  }
+
   isPaletteFound(): boolean {
-    const paletteIds = this.palettes.map(palette => this.getPaletteParamId(palette));
+    const paletteIds = this.unfilteredPalettes.map(palette => this.getPaletteId(palette));
     return paletteIds.includes(this.paletteParam);
+  }
+
+  generateRandomNumber(num: number): number {
+    return Math.floor(Math.random() * (num + 1));
   }
 }
