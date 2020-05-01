@@ -1,7 +1,8 @@
 // Fonts
-$sans-serif: 'Lato', Helvetica, Arial, sans-serif;
-$amaranth: 'Amaranth', sans-serif;
-$nitti: 'Nitti Normal', sans-serif;
+$browser-serif: Helvetica, Arial, sans-serif;
+$sans-serif: 'Lato', $browser-serif;
+$amaranth: 'Amaranth', $browser-serif;
+$nitti: 'Nitti Normal', $browser-serif;
 
 // Dimensions
 $content-width: 720px;

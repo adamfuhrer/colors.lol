@@ -1,121 +1,135 @@
 /* Lato Bold */
 @font-face {
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-Bold.woff')
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-Bold.woff');
+  font-display: swap;
 }
 
 /* Lato Bold Italic */
 @font-face {
-    font-weight: 700;
-    font-style: italic;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-BoldItalic.woff')
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-BoldItalic.woff');
+  font-display: swap;
 }
 
 /* Lato Semibold */
 @font-face {
-    font-weight: 600;
-    font-style: normal;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-Semibold.woff')
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-Semibold.woff');
+  font-display: swap;
 }
 
 /* Lato Semibold Italic */
 @font-face {
-    font-weight: 600;
-    font-style: italic;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-SemiboldItalic.woff')
+  font-weight: 600;
+  font-style: italic;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-SemiboldItalic.woff');
+  font-display: swap;
 }
 
 /* Lato Medium */
 @font-face {
-    font-weight: 500;
-    font-style: normal;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-Medium.woff')
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-Medium.woff');
+  font-display: swap;
 }
 
 /* Lato Medium Italic */
 @font-face {
-    font-weight: 500;
-    font-style: italic;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-MediumItalic.woff')
+  font-weight: 500;
+  font-style: italic;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-MediumItalic.woff');
+  font-display: swap;
 }
 
 /* Lato-Regular */
 @font-face {
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-Regular.woff')
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-Regular.woff');
+  font-display: swap;
 }
 
 /* Lato Regular Italic */
 @font-face {
-    font-weight: 400;
-    font-style: italic;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-Italic.woff')
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-Italic.woff');
+  font-display: swap;
 }
 
 /* Lato Light */
 @font-face {
-    font-weight: 300;
-    font-style: normal;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-Light.woff')
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-Light.woff');
+  font-display: swap;
 }
 
 /* Lato Light Italic */
 @font-face {
-    font-weight: 300;
-    font-style: italic;
-    font-family: 'Lato';
-    src: url('assets/fonts/Lato-LightItalic.woff')
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-LightItalic.woff');
+  font-display: swap;
 }
 
-/* amaranth-regular - latin */
+/* amaranth-regular */
 @font-face {
-    font-family: 'Amaranth';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Amaranth Regular'), local('Amaranth-Regular'),
-    url('assets/fonts/amaranth-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
-    url('assets/fonts/amaranth-v10-latin-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-family: 'Amaranth';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amaranth Regular'), local('Amaranth-Regular'),
+  url('assets/fonts/amaranth-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('assets/fonts/amaranth-v10-latin-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
-/* amaranth-700 - latin */
+/* amaranth-italic */
 @font-face {
-    font-family: 'Amaranth';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Amaranth Bold'), local('Amaranth-Bold'),
-    url('assets/fonts/amaranth-v10-latin-700.woff') format('woff'), /* Modern Browsers */
-    url('assets/fonts/amaranth-v10-latin-700.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-family: 'Amaranth';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Amaranth Italic'), local('Amaranth-Italic'),
+  url('assets/fonts/amaranth-v10-latin-italic.woff') format('woff'), /* Modern Browsers */
+  url('assets/fonts/amaranth-v10-latin-italic.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
-/* amaranth-700italic - latin */
+/* amaranth-700 */
 @font-face {
-    font-family: 'Amaranth';
-    font-style: italic;
-    font-weight: 700;
-    src: local('Amaranth Bold Italic'), local('Amaranth-BoldItalic'),
-    url('assets/fonts/amaranth-v10-latin-700italic.woff') format('woff'), /* Modern Browsers */
-    url('assets/fonts/amaranth-v10-latin-700italic.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-family: 'Amaranth';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amaranth Bold'), local('Amaranth-Bold'),
+  url('assets/fonts/amaranth-v10-latin-700.woff') format('woff'), /* Modern Browsers */
+  url('assets/fonts/amaranth-v10-latin-700.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
-/* amaranth-italic - latin */
+/* amaranth-700italic */
 @font-face {
-    font-family: 'Amaranth';
-    font-style: italic;
-    font-weight: 400;
-    src: local('Amaranth Italic'), local('Amaranth-Italic'),
-    url('assets/fonts/amaranth-v10-latin-italic.woff') format('woff'), /* Modern Browsers */
-    url('assets/fonts/amaranth-v10-latin-italic.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-family: 'Amaranth';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Amaranth Bold Italic'), local('Amaranth-BoldItalic'),
+  url('assets/fonts/amaranth-v10-latin-700italic.woff') format('woff'), /* Modern Browsers */
+  url('assets/fonts/amaranth-v10-latin-700italic.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-display: swap;
 }
 
 @font-face {
@@ -123,12 +137,13 @@
   font-style: normal;
   font-weight: normal;
   src: local('Nitti Normal'), url('assets/fonts/Nitti-Normal.woff') format('woff');
+  font-display: swap;
 }
-
 
 @font-face {
   font-family: 'Nitti Bold';
   font-style: normal;
   font-weight: normal;
   src: local('Nitti Bold'), url('assets/fonts/Nitti-Bold.woff') format('woff');
+  font-display: swap;
 }
