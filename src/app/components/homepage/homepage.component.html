@@ -1,4 +1,4 @@
-<div class="content-wrapper" fadeIn>
+<main class="content-wrapper" fadeIn>
   <ng-container *ngFor="let palette of palettes; let i = index">
     <app-color-palette *ngIf="paletteParam === null || paletteParam === getPaletteId(palette)"
                        [isShowingLinkButton]="paletteParam !== getPaletteId(palette)"
@@ -21,4 +21,4 @@
     </svg>
     <span>VIEW ALL PALETTES</span>
   </a>
-</div>
+</main>

@@ -31,16 +31,16 @@ export class HomepageComponent implements OnInit, OnDestroy {
       this.paletteParam = params.get('id');
 
       if (this.paletteParam && this.isPaletteFound()) {
-        this.titleService.setTitle(this.paletteParam + ' palette | colors.lol');
+        this.titleService.setTitle(this.paletteParam + ' color palette | colors.lol');
       } else if (this.paletteParam && this.paletteParam === 'random') {
         this.colorFilterService.emitFilterColor(null);
         const randomPalette = this.getRandomPaletteId();
 
         this.router.navigateByUrl('/' + randomPalette).then(() => {
-          this.titleService.setTitle(randomPalette + ' palette | colors.lol');
+          this.titleService.setTitle(randomPalette + ' color palette | colors.lol');
         });
       } else if (this.paletteParam && !this.isPaletteFound()) {
-        this.titleService.setTitle('Unknown palette | colors.lol');
+        this.titleService.setTitle('Unknown color palette | colors.lol');
       } else {
         this.titleService.setTitle('colors.lol - Overly descriptive color palettes');
       }
