@@ -2,3 +2,58 @@
 @import 'typography';
 @import 'vars';
 @import 'font-declarations';
+
+#carbonads {
+  max-width: 300px;
+  font-family: $sans-serif;
+  position: absolute;
+  top: -300px;
+  left: 20px;
+}
+
+#carbonads > span {
+  position: relative;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: $box-shadow-weak;
+  background-color: #F5F5F5;
+}
+
+#carbonads .carbon-wrap {
+  display: flex;
+}
+
+#carbonads .carbon-img {
+  margin-right: 10px;
+  line-height: 1;
+}
+
+#carbonads .carbon-text {
+  margin-bottom: 12px;
+  color: #637381;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+#carbonads .carbon-poweredby {
+  position: absolute;
+  bottom: 10px;
+  left: 152px;
+  color: #87959A;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 1;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  #carbonads {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}

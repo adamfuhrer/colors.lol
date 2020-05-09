@@ -1,18 +1,20 @@
-import {Component, HostBinding, OnDestroy, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {AfterViewInit, Component, HostBinding, Inject, OnDestroy, OnInit, Renderer2} from '@angular/core';
+import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
 import {Title} from '@angular/platform-browser';
 import {Color} from '../color-palette/color-palette.component';
 import {ColorFilterService} from '../../services/color-filter.service';
 import {Subscription} from 'rxjs';
 import * as chroma from 'chroma-js';
 import palettes from '../../palettes.json';
+import {DOCUMENT} from '@angular/common';
+import {filter} from 'rxjs/operators';
 
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
 })
-export class HomepageComponent implements OnInit, OnDestroy {
+export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
   @HostBinding('class.is-showing-single-palette') paletteParam: string;
   palettes = [];
   unfilteredPalettes = [];
@@ -21,7 +23,9 @@ export class HomepageComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute,
               private router: Router,
               private colorFilterService: ColorFilterService,
-              private titleService: Title) {
+              private titleService: Title,
+              private renderer2: Renderer2,
+              @Inject(DOCUMENT) private document) {
     this.palettes = Object.values(palettes)[0];
     this.unfilteredPalettes = [...this.palettes];
   }
@@ -60,6 +64,21 @@ export class HomepageComponent implements OnInit, OnDestroy {
     });
   }
 
+  ngAfterViewInit() {
+    const script = this.renderer2.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '//cdn.carbonads.com/carbon.js?serve=CE7IV23M&placement=colorslol';
+    script.id = '_carbonads_js';
+
+    setTimeout(() => {
+      if (this.document.querySelector('.view-all')) {
+        this.insertElementAfter(script, this.document.querySelector('.view-all'));
+      } else {
+        this.insertElementAfter(script, this.document.querySelector('.color-palette'));
+      }
+    }, 0);
+  }
+
   ngOnDestroy(): void {
     if (this.colorFilterSubscription) {
       this.colorFilterSubscription.unsubscribe();
@@ -81,5 +100,14 @@ export class HomepageComponent implements OnInit, OnDestroy {
 
   generateRandomNumber(num: number): number {
     return Math.floor(Math.random() * (num + 1));
+  }
+
+  insertElementAfter(newElement, targetElement) {
+    const parent = targetElement.parentNode;
+    if (parent.lastChild === targetElement) {
+      parent.appendChild(newElement);
+    } else {
+      parent.insertBefore(newElement, targetElement.nextSibling);
+    }
   }
 }

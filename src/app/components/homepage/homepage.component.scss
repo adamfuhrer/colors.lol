@@ -7,6 +7,7 @@
   margin-top: 30px;
 
   .content-wrapper {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px 90px;
@@ -66,7 +67,10 @@
   &.is-showing-single-palette {
     .content-wrapper {
       grid-template-columns: 1fr;
-      max-width: 800px;
+
+      app-color-palette {
+        max-width: 680px;
+      }
 
       ::ng-deep {
         .palette {
