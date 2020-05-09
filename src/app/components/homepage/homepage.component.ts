@@ -61,6 +61,10 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
       } else {
         this.palettes = this.unfilteredPalettes;
       }
+
+      if (this.document.getElementById('carbonads')) {
+        this.renderer2.setStyle(this.document.getElementById('carbonads'), 'order', '1');
+      }
     });
   }
 
