@@ -27,6 +27,10 @@
 #carbonads .carbon-img {
   margin-right: 10px;
   line-height: 1;
+
+  img {
+    border-radius: 3px;
+  }
 }
 
 #carbonads .carbon-text {
@@ -35,6 +39,11 @@
   text-decoration: none;
   font-size: 12px;
   line-height: 1.45;
+  transition: color 350ms $ease 0s;;
+
+  &:hover {
+    color: $pink;
+  }
 }
 
 #carbonads .carbon-poweredby {
@@ -48,6 +57,11 @@
   font-weight: 500;
   font-size: 8px;
   line-height: 1;
+  transition: color 350ms $ease 0s;;
+
+  &:hover {
+    color: $pink;
+  }
 }
 
 @media screen and (max-width: $breakpoint-medium) {
