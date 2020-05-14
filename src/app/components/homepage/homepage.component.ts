@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, HostBinding, Inject, OnDestroy, OnInit, Renderer2} from '@angular/core';
-import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Title} from '@angular/platform-browser';
 import {Color} from '../color-palette/color-palette.component';
 import {ColorFilterService} from '../../services/color-filter.service';
@@ -7,7 +7,6 @@ import {Subscription} from 'rxjs';
 import * as chroma from 'chroma-js';
 import palettes from '../../palettes.json';
 import {DOCUMENT} from '@angular/common';
-import {filter} from 'rxjs/operators';
 
 @Component({
   selector: 'app-homepage',
