@@ -54,8 +54,9 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
     this.colorFilterSubscription = this.colorFilterService.filterColor.subscribe(color => {
       if (color) {
         this.palettes = [...this.unfilteredPalettes].filter(palette => {
-          return palette.some(c => chroma.deltaE(c.hex, color.hex) < 20) ||
-            palette.some(c => chroma.deltaE(c.hex, chroma(color.hex).desaturate(1.4)) < 18);
+          return palette.some(paletteColor => paletteColor.description.toLowerCase().indexOf(color.description) >= 0) ||
+            palette.some(paletteColor => chroma.deltaE(paletteColor.hex, color.hex) < 18) ||
+            palette.some(paletteColor => chroma.deltaE(paletteColor.hex, chroma(color.hex).desaturate(1.4)) < 14);
         });
       } else {
         this.palettes = this.unfilteredPalettes;
