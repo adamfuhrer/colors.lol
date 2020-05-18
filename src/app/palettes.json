@@ -1400,6 +1400,62 @@
         "hex": "#017374",
         "description": "waning deep turquoise"
       }
+    ],
+    [
+      {
+        "hex": "#5a86ad",
+        "description": "campodeiform dusty blue"
+      },
+      {
+        "hex": "#fdaa47",
+        "description": "smart light orange"
+      },
+      {
+        "hex": "#c85a53",
+        "description": "versicular dark salmon"
+      }
+    ],
+    [
+      {
+        "hex": "#7d7f7b",
+        "description": "goosy medium grey"
+      },
+      {
+        "hex": "#1f6357",
+        "description": "flooded dark green blue"
+      },
+      {
+        "hex": "#968a84",
+        "description": "gravitational warm grey"
+      }
+    ],
+    [
+      {
+        "hex": "#e6daa6",
+        "description": "apocalyptical beige"
+      },
+      {
+        "hex": "#cf0134",
+        "description": "headier cherry"
+      },
+      {
+        "hex": "#fd3c07",
+        "description": "nerve-wracking red orange"
+      }
+    ],
+    [
+      {
+        "hex": "#fead01",
+        "description": "datable orange yellow"
+      },
+      {
+        "hex": "#2479fd",
+        "description": "uncoated clear blue"
+      },
+      {
+        "hex": "#cc6743",
+        "description": "irremeable terracota"
+      }
     ]
   ]
 }
