@@ -18,8 +18,9 @@ export class FadeInDirective  implements OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     if (changes['fadeIn']) {
       this.fadeAnimation = this.builder.build([
-        style({opacity: 0}),
-        animate(this.fadeDuration + ' cubic-bezier(0.215, 0.61, 0.355, 1)', style({opacity: 1}))
+          style({opacity: 0}),
+          animate(this.fadeDuration + ' cubic-bezier(0.215, 0.61, 0.355, 1)',
+          style({opacity: 1}))
       ]);
 
       this.player = this.fadeAnimation.create(this.el.nativeElement);

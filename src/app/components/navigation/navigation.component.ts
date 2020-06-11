@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {ColorFilterService} from '../../services/color-filter.service';
-import {ActivationStart, Router} from '@angular/router';
+import {ActivationEnd, Router} from '@angular/router';
 import {Color} from '../color-palette/color-palette.component';
 
 @Component({
@@ -25,11 +25,9 @@ export class NavigationComponent {
   constructor(private colorFilterService: ColorFilterService,
               private router: Router) {
     this.router.events.subscribe(event => {
-      if (event instanceof ActivationStart) {
-        if (event.snapshot.url) {
-          // Only show filters on the homepage
-          this.isShowingFilters = event.snapshot.url.length === 0;
-        }
+      // Only show filters on the homepage
+      if (event instanceof ActivationEnd && event.snapshot.url) {
+        this.isShowingFilters = event.snapshot.url.length === 0;
       }
     });
   }

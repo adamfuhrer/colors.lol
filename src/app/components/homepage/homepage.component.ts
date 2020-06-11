@@ -32,21 +32,7 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.paletteParam = params.get('id');
-
-      if (this.paletteParam && this.isPaletteFound()) {
-        this.titleService.setTitle(this.paletteParam + ' color palette | colors.lol');
-      } else if (this.paletteParam && this.paletteParam === 'random') {
-        this.colorFilterService.emitFilterColor(null);
-        const randomPalette = this.getRandomPaletteId();
-
-        this.router.navigateByUrl('/' + randomPalette).then(() => {
-          this.titleService.setTitle(randomPalette + ' color palette | colors.lol');
-        });
-      } else if (this.paletteParam && !this.isPaletteFound()) {
-        this.titleService.setTitle('Unknown color palette | colors.lol');
-      } else {
-        this.titleService.setTitle('colors.lol - Overly descriptive color palettes');
-      }
+      this.setBrowserTitle(this.paletteParam);
     });
 
     // Compare the filter color to the colors of each palette
@@ -69,18 +55,7 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const script = this.renderer2.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//cdn.carbonads.com/carbon.js?serve=CE7IV23M&placement=colorslol';
-    script.id = '_carbonads_js';
-
-    setTimeout(() => {
-      if (this.document.querySelector('.view-all')) {
-        this.insertElementAfter(script, this.document.querySelector('.view-all'));
-      } else {
-        this.insertElementAfter(script, this.document.querySelector('.color-palette'));
-      }
-    }, 0);
+    this.insertCarbonAdIntoDOM();
   }
 
   ngOnDestroy(): void {
@@ -102,8 +77,36 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
     return paletteIds.includes(this.paletteParam);
   }
 
-  generateRandomNumber(num: number): number {
-    return Math.floor(Math.random() * (num + 1));
+  setBrowserTitle(title: string): void {
+    if (title && this.isPaletteFound()) {
+      this.titleService.setTitle(title + ' color palette | colors.lol');
+    } else if (title && title === 'random') {
+      this.colorFilterService.emitFilterColor(null);
+      const randomPalette = this.getRandomPaletteId();
+
+      this.router.navigateByUrl('/' + randomPalette).then(() => {
+        this.titleService.setTitle(randomPalette + ' color palette | colors.lol');
+      });
+    } else if (title && !this.isPaletteFound()) {
+      this.titleService.setTitle('Unknown color palette | colors.lol');
+    } else {
+      this.titleService.setTitle('colors.lol - Overly descriptive color palettes');
+    }
+  }
+
+  insertCarbonAdIntoDOM(): void {
+    const script = this.renderer2.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '//cdn.carbonads.com/carbon.js?serve=CE7IV23M&placement=colorslol';
+    script.id = '_carbonads_js';
+
+    setTimeout(() => {
+      if (this.document.querySelector('.view-all')) {
+        this.insertElementAfter(script, this.document.querySelector('.view-all'));
+      } else {
+        this.insertElementAfter(script, this.document.querySelector('.color-palette'));
+      }
+    }, 0);
   }
 
   insertElementAfter(newElement, targetElement) {
@@ -113,5 +116,9 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
     } else {
       parent.insertBefore(newElement, targetElement.nextSibling);
     }
+  }
+
+  generateRandomNumber(num: number): number {
+    return Math.floor(Math.random() * (num + 1));
   }
 }
