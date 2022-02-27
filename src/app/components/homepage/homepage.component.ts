@@ -84,7 +84,7 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
       this.colorFilterService.emitFilterColor(null);
       const randomPalette = this.getRandomPaletteId();
 
-      this.router.navigateByUrl('/' + randomPalette).then(() => {
+      this.router.navigateByUrl('/' + randomPalette, { replaceUrl: true }).then(() => {
         this.titleService.setTitle(randomPalette + ' color palette | colors.lol');
       });
     } else if (title && !this.isPaletteFound()) {
